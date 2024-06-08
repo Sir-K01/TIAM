@@ -17,12 +17,7 @@ body {
     z-index: 1;
     text-align: center;
 }
-/* Responsive styles */
-@media (max-width: 768px) {
-    .contenido-pagina ul {
-        padding: 0;
-        margin: 0;
-    }
+
 .contenedor-imagen {
     position: fixed;
     top: 0;
@@ -134,27 +129,7 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
     height: 810px;
     margin: 15px;
 }
-
-/* .dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:#333;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-display: list-item;
-} **/
+    
 .image:hover img {
 transform: scale(1.2); /* Ajusta el valor según sea necesario */
 
