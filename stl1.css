@@ -7,12 +7,11 @@ body {
 }
 
 #logotipo {
-    border-radius: 95%;
-    border: 9px solid rgb(224, 13, 199);
-    width: 310px;
-    transition: border-color 0.5s ease-in-out; /* Transición suave */
+  border-radius: 95%;
+  border: 9px solid rgb(224, 13, 199);
+  width: 310px;
+  transition: border-color 0.5s ease-in-out; /* Transición suave */
 }
-
 .header {
     position: top;
     z-index: 1;
@@ -27,34 +26,39 @@ body {
     height: 100vh;
     background-image: url('C:/Users/08snk/Downloads/TIAM/imag/lotus.jpg');
     background-size: cover;
-    filter: blur(6px) contrast(8px);
+    filter: blur(6px);
+    filter: contrast(8px);
     z-index: -1;
 }
 
 .contenido-pagina {
+    
     position: relative;
     z-index: 1;
+ 
 }
+
 
 button {
     padding: 15px 20px;
     color: fuchsia;
-    border: 2px solid springgreen;
+    
+    border: springgreen;
     border-radius: 50px;
     margin: 4px 2px;
     cursor: pointer;
 }
 
 button:hover {
-    color: #000;
+    color:  #000;
     background-color: pink;
 }
 
 ul {
     list-style-type: none;
     margin: 50px;
-    padding: 0;
-    overflow: hidden;
+    padding: px;
+    overflow: none;
     width: fit-content;
 }
 
@@ -71,135 +75,122 @@ li {
     text-align: center;
     font-size: 50px;
     color: azure;
-}
-
-.h2color {
+  }
+  
+  .h2color {
     text-shadow: 1px 1px 2px, 0 0 25px rgb(212, 0, 255), 0 0 5px rgb(0, 123, 255);
     text-align: center;
     font-size: 50px;
     color: white;
-}
+  }
 
 .neon {
     font-size: 50px;
     color: black;
-    text-shadow: 0 0 10px turquoise, 0 0 20px turquoise, 0 0 30px turquoise, 0 0 40px blue, 0 0 70px blue,
-        0 0 80px cyan, 0 0 100px cyan, 0 0 150px cyan;
+    text-shadow: 0 0 10px turquoise, 0 0 20px turquoise, 0 0 30px turquoise , 0 0 40px blue, 0 0 70px blue,
+        0 0 80px cyan , 0 0 100px cyan, 0 0 150px cyan;
 }
 
 .text {
-    font-size: 35px;
-    text-decoration: wavy;
-    text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
+font-size: 35px;
+text-decoration: wavy;
+text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
+
 }
 
 .offcanvas-content {
     padding: 20px;
-}
-
-.offcanvas.active {
+  }
+  .offcanvas.active {
     right: 0;
-}
-
-.content {
+  }
+  .content {
     position: relative;
     z-index: -1px;
     padding: 90px;
 }
-
 #image-container {
-    width: 100%;
+    width: 1480px;
     margin: 30px 0px;
     text-align: center;
+    white-space: nowrap;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
-
+#image-container2 {
+    width: 1480px;
+    margin: -350px 0px;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+}
 .image {
     display: inline-block;
-    width: 290px;
-    height: 320px;
+    width: 810px;
+    height: 810px;
     margin: 15px;
 }
 
-.image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 35%;
-    border: 3px solid;
-    transition: transform 0.6s ease; /* Ajusta la duración de la transición según sea necesario */
-}
-
-.image:hover img {
-    transform: scale(1.2); /* Ajusta el valor según sea necesario */
-}
-
-.offcanvas {
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 300px;
-    height: 100vh;
-    background-color: #333;
-    transition: right 0.4s ease-in-out;
-    z-index: 9999;
-}
-
-.contenido-pagina ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.contenido-pagina ul li {
-    display: inline-block;
+/* .dropdown {
+    position: relative;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 190px;
+    background-color:#333;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-}
-
-.dropdown-content li {
-    display: block;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    .contenido-pagina ul {
-        padding: 0;
-        margin: 0;
-    }
+.dropdown:hover .dropdown-content {
+display: list-item;
+} **/
+.image:hover img {
+transform: scale(1.2); /* Ajusta el valor según sea necesario */
 
-    .contenido-pagina ul li {
-        display: block;
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .image {
-        width: 100%;
-        height: auto;
-    }
-
-    .image img {
-        width: 100%;
-        height: auto;
-    }
-
-    .h3color, .h2color {
-        font-size: 35px;
-    }
-
-    button {
-        width: 100%;
-        box-sizing: border-box;
-    }
 }
+.image img {
+transition: transform 0.6s ease; /* Ajusta la duración de la transición según sea necesario */
+}
+.offcanvas {
+position: fixed;
+top: 0;
+right: -300px;
+width: 300px;
+height: 100vh;
+background-color: #333;
+transition: right 0.4s ease-in-out;
+z-index: 9999;
+}
+
+  .contenido-pagina ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contenido-pagina ul li {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 190px;
+    z-index: 1;
+  }
+  
+  .dropdown-content li {
+    display: block;
+  }
+  
+ 
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
