@@ -17,7 +17,12 @@ body {
     z-index: 1;
     text-align: center;
 }
-
+/* Responsive styles */
+@media (max-width: 768px) {
+    .contenido-pagina ul {
+        padding: 0;
+        margin: 0;
+    }
 .contenedor-imagen {
     position: fixed;
     top: 0;
