@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:/Users/08snk/Downloads/TIAM/styles/stl1.css">
+    <title> NatyTiam.com </title>
+</head>
+
+<body>
+    <div class="header">
+      
+        <h1 class="h3color"  class="emoji-title">NATY TIAM</h1> 
+        <h2 class="h2color">Transformando Ideas en Accesorios de Moda</h2> 
+        <div class="contenedor-imagen"></div>
+        <nav>
+     
+    </div>
+    
+    <center>   
+        <div class="contenido-pagina">
+            <ul>
+              <li><button class="active" onclick="document.location=' '" title="Volver a inicio">Inicio</button></li>
+              <li class="dropdown">
+                <button title="Productos">Productos &#11015;</button>
+                <ul class="dropdown-content">
+                  <li><button style="font-size: 15px;" onclick="document.location='C:/Users/08snk/Downloads/TIAM/amigu.html'" title="productos">Amigurumis &#x1F9F8;</button></li>
+                 <br>
+                  <li><button style="font-size: 15px;" onclick="document.location='C:/Users/08snk/Downloads/TIAM/repost.html'" title="Reposteria">Reposteria  &#x1F370;</button></li>
+                  <br>
+                  <li><button style="font-size: 15px;" onclick="document.location='C:/Users/08snk/Downloads/TIAM/Accseso.html'" title="Accesorios">Accesorios &#x1F48D;</button></li>
+                  <br>
+                  <li><button style="font-size: 15px;" onclick="document.location='C:/Users/08snk/Downloads/TIAM/gift.html'" title="Regalos">Regalos por ocaciones &#x1F381;</button></li>
+                </ul>
+              </li>
+              <li><button onclick="document.location=' '" title="Social Media">Redes sociales</button></li>
+              <li><button onclick="document.location=' '" title="Pedidos">Pedidos</button></li>
+              <li><button onclick="document.location=' '" title="Precios-tabla">Tabla de precios</button></li>
+              <li><button onclick="document.location=' '" title="contactos">Contactanos</button></li>
+            </ul>
+          </div>
+          
+    </center>
+                        <!--AQUI SE VA A HACER LOS PRODUCTOS MAS NUEVOS O VENDIDOS-->
+ <br>
+ <br>
+    <!-- Contenido de la página -->
+    <h1   id="color-changing-heading" class="h3color">PRODUCTOS MAS NUEVOS</h1>
+    <div  id="image-container">
+
+        <div class="image">
+            <img src="C:/Users/08snk/Downloads/TIAM/merch/camaleon.jpg" alt="Camaleón"
+                style="border-radius:35%;border: 3px;width: 290px; height: 320px;">
+            <p class="text">Amigurumi Camaleón</p>
+        </div>
+
+        
+    <div class="image">
+      <img src="C:\Users\08snk\Downloads\TIAM\merch\IMG-20240428-WA0018.jpg" alt="Gabinete "
+      style="border-radius:35%;border: 3px;width: 290px; height: 320px;">
+      <p class="text">Pastelitos</p>
+    </div>
+
+        <div class="image">
+            <img src="C:/Users/08snk/Downloads/TIAM/merch/pollito.jpg"alt="Gabinete "
+            style="border-radius:35%;border: 3px;width: 290px; height: 320px;">
+            <p class="text">Amigurumi</p>
+        </div>
+</div>
+
+<center><img id="logotipo" src="C:/Users/08snk/Downloads/TIAM/imag/icon.png" alt="Logotipo"></center> 
+
+
+<script>
+    // Obtiene el elemento h1
+    const heading = document.getElementById('color-changing-heading');
+  
+    // Define una función para cambiar el color de la sombra
+    function changeShadowColor() {
+      // Genera un valor hexadecimal aleatorio para el color
+      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(15);
+  
+      // Cambia el valor de la propiedad text-shadow
+      heading.style.textShadow = `1px 1px 2px, 0 0 30px ${randomColor}, 0 0 10px pink`;
+    }
+  
+    // Cambia el color de la sombra cada 3 segundos
+    setInterval(changeShadowColor, 2500);
+     </script>
+    <script>
+  // Obtiene el elemento h1
+  const heading2 = document.getElementById('color-changing-heading');
+
+  // Define una función para cambiar el color
+  function changeColor() {
+    if (heading.style.color === 'white') {
+      heading.style.color = 'fuchsia';
+    } else {
+      heading.style.color = 'white';
+    }
+  }
+
+  // Cambia el color cada 3 segundos
+  setInterval(changeColor, 2500);
+</script>
+
+<!-- cambio de color del logotipo -->
+<script>
+function getRandomPastelColor() {
+  var r = Math.floor(Math.random() * 100) + 155; // Componente rojo en el rango [155, 255]
+  var g = Math.floor(Math.random() * 100) + 155; // Componente verde en el rango [155, 255]
+  var b = Math.floor(Math.random() * 100) + 155; // Componente azul en el rango [155, 255]
+  return 'rgb(' + r + ',' + g + ',' + b + ')';
+}
+
+function cambiarColorBorde() {
+  var logotipo = document.getElementById('logotipo');
+  logotipo.style.borderColor = getRandomPastelColor();
+}
+
+function efectoLuzRGB() {
+  setInterval(cambiarColorBorde, 500); // Cambia el color cada 0.5 segundos
+}
+
+efectoLuzRGB(); // Iniciar el efecto de luz RGB
+</script>
+
+</body>
+</html>

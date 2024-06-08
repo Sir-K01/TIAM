@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:/Users/08snk/Downloads/TIAM/styles/stl1.css">
+    <title>Amigurumis</title>
+</head>
+<body>
+    <div class="contenedor-imagen"></div>
+<CENTER>
+    <p class="h2color" style="font-size: 55px;">En construccion &#x1F528;</p>
+</CENTER>
+
+
+
+
+<br>
+<center><img id="logotipo" src="C:/Users/08snk/Downloads/TIAM/imag/icon.png" alt="foto"></center> 
+
+
+
+<script>
+    function getRandomPastelColor() {
+      var r = Math.floor(Math.random() * 100) + 155; // Componente rojo en el rango [155, 255]
+      var g = Math.floor(Math.random() * 100) + 155; // Componente verde en el rango [155, 255]
+      var b = Math.floor(Math.random() * 100) + 155; // Componente azul en el rango [155, 255]
+      return 'rgb(' + r + ',' + g + ',' + b + ')';
+    }
+    
+    function cambiarColorBorde() {
+      var logotipo = document.getElementById('logotipo');
+      logotipo.style.borderColor = getRandomPastelColor();
+    }
+    
+    function efectoLuzRGB() {
+      setInterval(cambiarColorBorde, 500); // Cambia el color cada 0.5 segundos
+    }
+    
+    efectoLuzRGB(); // Iniciar el efecto de luz RGB
+    </script>
+</body>
+</html>
