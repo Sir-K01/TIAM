@@ -93,6 +93,19 @@
             setInterval(cambiarColorBorde, 500);
         }
         efectoLuzRGB();
+
+        let currentIndex = 0;
+
+function showNextImage() {
+    const imagesContainer = document.querySelector('.carousel-images');
+    const images = imagesContainer.querySelectorAll('.image');
+    currentIndex = (currentIndex + 1) % images.length;
+    const translateX = -currentIndex * 100;
+    imagesContainer.style.transform = `translateX(${translateX}%)`;
+}
+
+setInterval(showNextImage, 3200);
+
     </script>
 </body>
 </html>
