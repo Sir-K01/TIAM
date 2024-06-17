@@ -147,7 +147,7 @@ transform: scale(1.1); /* Ajusta el valor según sea necesario */
 
 }
 .image img {
-transition: transform 0.5s ease; /* Ajusta la duración de la transición según sea necesario */
+transition: transform 0.3s ease; /* Ajusta la duración de la transición según sea necesario */
 }
 
   .contenido-pagina ul {
@@ -170,8 +170,6 @@ transition: transform 0.5s ease; /* Ajusta la duración de la transición según
   .dropdown-content li {
     display: block;
   }
-  
- 
   
   .dropdown:hover .dropdown-content {
     display: block;
