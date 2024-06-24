@@ -124,38 +124,35 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
     display: flex;
 }
 
+.carousel {
+    overflow: hidden; /* Ocultar cualquier contenido que se desborde */
+    margin: 0 auto; /* Centrar el carousel horizontalmente */
+    width: 90%; /* Ajustar el ancho del carousel */
+    max-width: 1200px; /* Establecer un ancho máximo para evitar que se extienda demasiado */
+}
+
 .carousel-images {
     display: flex;
-    overflow-x: auto; /* Agrega desplazamiento horizontal si es necesario */
-    scroll-snap-type: x mandatory; /* Forzar desplazamiento de carrusel horizontal */
-    gap: 10px; /* Espacio entre imágenes */
-    padding: 10px; /* Añade espacio alrededor del carrusel */
+    transition: transform 0.3s ease-in-out;
 }
 
 .image {
-    min-width: 10%; /* Ancho mínimo de cada imagen */
-    box-sizing: border-box; /* Usar el modelo de caja border-box */
+    min-width: 100%; /* Asegurar que cada imagen ocupe al menos el ancho del carousel */
+    box-sizing: border-box; /* Usar border-box para incluir padding y border en el ancho */
     text-align: center;
-    scroll-snap-align: center; /* Alineación de desplazamiento de carrusel */
+    flex: 0 0 auto; /* Evitar que las imágenes se estiren para ajustarse */
+    width: 100%; /* Asegurar que cada imagen ocupe el ancho completo del carousel */
 }
 
 .image img {
     border-radius: 49%;
     border: 2px solid #000;
-    max-width: 70%; /* Ancho máximo de la imagen */
-    height: auto; /* Altura automática para mantener la proporción */
-    transition: transform 0.3s ease; /* Ajusta la duración de la transición según sea necesario */
+    width: 100%; /* Asegurar que la imagen ocupe el ancho completo de su contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
 }
 
-@media (min-width: 468px) {
-    .carousel-images {
-        gap: 20px; /* Espacio entre imágenes en pantallas más grandes */
-        padding: 20px; /* Aumenta el espacio alrededor del carrusel en pantallas más grandes */
-    }
-
 .image:hover img {
-transform: scale(1.1); /* Ajusta el valor según sea necesario */
-
+    transform: scale(1.1); /* Ajustar el valor según sea necesario */
 }
 
   .contenido-pagina ul {
