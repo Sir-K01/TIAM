@@ -122,8 +122,8 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 .carousel {
     overflow: hidden; /* Ocultar cualquier contenido que se desborde */
     margin: 0 auto; /* Centrar el carousel horizontalmente */
-    width: 40%; /* Ajustar el ancho del carousel */
-    max-width: 400px; /* Establecer un ancho máximo para evitar que se extienda demasiado */
+    width: 60%; /* Ajustar el ancho del carousel */
+    max-width: 150px; /* Establecer un ancho máximo para evitar que se extienda demasiado */
 }
 
 .carousel-images {
@@ -132,11 +132,11 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 }
 
 .image {
-    min-width: 100%; /* Asegurar que cada imagen ocupe al menos el ancho del carousel */
+    min-width: 60%; /* Asegurar que cada imagen ocupe al menos el ancho del carousel */
     box-sizing: border-box; /* Usar border-box para incluir padding y border en el ancho */
     text-align: center;
     flex: 0 0 auto; /* Evitar que las imágenes se estiren para ajustarse */
-    width: 100%; /* Asegurar que cada imagen ocupe el ancho completo del carousel */
+    width: 60%; /* Asegurar que cada imagen ocupe el ancho completo del carousel */
 }
 
 .image img {
