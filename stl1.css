@@ -4,14 +4,14 @@ body {
     background-color: pink;
     color: #fff;
     font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
 }
 
 #logotipo {
-    border-radius: 95%;
-    border: 9px solid rgb(224, 13, 199);
-    width: 310px;
-    transition: border-color 0.5s ease-in-out; /* Transición suave */
+  border-radius: 95%;
+  border: 9px solid rgb(224, 13, 199);
+  width: 310px;
+  transition: border-color 0.5s ease-in-out; /* Transición suave */
 }
 
 .header {
@@ -28,23 +28,26 @@ body {
     height: 100vh;
     background-image: url('lotus.jpg');
     background-size: cover;
-    filter: blur(6px);
-    filter: contrast(8px);
+    filter: blur(6px) contrast(8px);
     z-index: -1;
 }
 
 .contenido-pagina {
     position: relative;
-    z-index: 1;
+    z-index: 2; /* Asegura que el contenido esté por encima del fondo */
+    background-color: rgba(0, 0, 0, 0.5); /* Añadir un fondo semitransparente para mejorar la legibilidad */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 button {
     padding: 15px 20px;
     color: fuchsia;
-    border: springgreen;
+    border: none;
     border-radius: 50px;
     margin: 4px 2px;
     cursor: pointer;
+    background-color: #fff;
 }
 
 button:hover {
@@ -54,14 +57,15 @@ button:hover {
 
 ul {
     list-style-type: none;
-    margin: 50px;
-    padding: 0; /* Corregido: quitar px */
-    overflow: hidden; /* Evitar desbordamiento */
-    width: fit-content;
+    margin: 50px 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
 }
 
 li {
-    float: left;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .active {
@@ -74,7 +78,7 @@ li {
     font-size: 50px;
     color: azure;
 }
-
+  
 .h2color {
     text-shadow: 1px 1px 2px, 0 0 25px rgb(212, 0, 255), 0 0 5px rgb(0, 123, 255);
     text-align: center;
@@ -85,8 +89,7 @@ li {
 .neon {
     font-size: 50px;
     color: black;
-    text-shadow: 0 0 10px turquoise, 0 0 20px turquoise, 0 0 30px turquoise, 0 0 40px blue, 0 0 70px blue,
-        0 0 80px cyan, 0 0 100px cyan, 0 0 150px cyan;
+    text-shadow: 0 0 10px turquoise, 0 0 20px turquoise, 0 0 30px turquoise, 0 0 40px blue, 0 0 70px blue, 0 0 80px cyan, 0 0 100px cyan, 0 0 150px cyan;
 }
 
 .text {
@@ -105,12 +108,12 @@ li {
 
 .content {
     position: relative;
-    z-index: -1px;
+    z-index: 1;
     padding: 90px;
 }
 
 #image-container {
-    width: 100%; /* Corregido: ajustar al 100% */
+    width: 100%;
     margin: 30px 0;
     text-align: center;
     white-space: nowrap;
@@ -119,7 +122,7 @@ li {
 }
 
 #image-container2 {
-    width: 100%; /* Corregido: ajustar al 100% */
+    width: 100%;
     margin: -350px 0;
     text-align: center;
     white-space: nowrap;
@@ -134,7 +137,7 @@ li {
 
 .image {
     min-width: 100%;
-    box-sizing: border-box; /* Corregido: usar border-box */
+    box-sizing: border-box; /* Usar border-box */
     text-align: center;
 }
 
