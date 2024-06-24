@@ -32,17 +32,13 @@ body {
 }
 
 .contenido-pagina {
-    
     position: relative;
     z-index: 1;
- 
 }
-
 
 button {
     padding: 15px 20px;
     color: fuchsia;
-    
     border: springgreen;
     border-radius: 50px;
     margin: 4px 2px;
@@ -95,7 +91,6 @@ li {
 font-size: 35px;
 text-decoration: wavy;
 text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
-
 }
 
 .offcanvas-content {
@@ -127,8 +122,8 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 .carousel {
     overflow: hidden; /* Ocultar cualquier contenido que se desborde */
     margin: 0 auto; /* Centrar el carousel horizontalmente */
-    width: 90%; /* Ajustar el ancho del carousel */
-    max-width: 1200px; /* Establecer un ancho máximo para evitar que se extienda demasiado */
+    width: 40%; /* Ajustar el ancho del carousel */
+    max-width: 400px; /* Establecer un ancho máximo para evitar que se extienda demasiado */
 }
 
 .carousel-images {
