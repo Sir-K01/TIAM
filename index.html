@@ -13,7 +13,6 @@
         <h1 class="h3color" class="emoji-title">NATY TIAM</h1>
         <h2 class="h2color">Transformando Ideas en Accesorios de Moda</h2>
         <div class="contenedor-imagen"></div>
-        <nav></nav>
     </div>
 
     <center>
@@ -36,7 +35,9 @@
             </ul>
         </div>
     </center>
+
     <br><br><br>
+
     <h1 id="color-changing-heading" class="h3color">PRODUCTOS MAS NUEVOS</h1>
     <br>
     <div class="carousel">
@@ -54,7 +55,7 @@
                 <p class="text">Amigurumi pollito</p>
             </div>
             <div class="image">
-                <img src="IMG-20240428-WA0007.jpg" alt="pulseras">
+                <img src="IMG-20240428-WA0007.jpg" alt="Pulseras">
                 <p class="text">Pulseras</p>
             </div>
             <div class="image">
@@ -63,6 +64,7 @@
             </div>
         </div>
     </div>
+
     <br>
     <center><img id="logotipo" src="icon.png" alt="Logotipo"></center>
 
@@ -73,13 +75,13 @@
         // Define una función para cambiar el color de la sombra
         function changeShadowColor() {
             // Genera un valor hexadecimal aleatorio para el color
-            const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(15);
+            const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
 
             // Cambia el valor de la propiedad text-shadow
             heading.style.textShadow = `1px 1px 2px, 0 0 30px ${randomColor}, 0 0 10px pink`;
         }
 
-        // Cambia el color de la sombra cada 3 segundos
+        // Cambia el color de la sombra cada 2.5 segundos
         setInterval(changeShadowColor, 2500);
     </script>
     <script>
@@ -88,48 +90,15 @@
 
         // Define una función para cambiar el color
         function changeColor() {
-            if (heading.style.color === 'white') {
-                heading.style.color = 'fuchsia';
+            if (heading2.style.color === 'white') {
+                heading2.style.color = 'fuchsia';
             } else {
-                heading.style.color = 'white';
+                heading2.style.color = 'white';
             }
         }
 
-        // Cambia el color cada 3 segundos
+        // Cambia el color cada 2.5 segundos
         setInterval(changeColor, 2500);
-    </script>
-
-    <!-- cambio de color del logotipo -->
-    <script>
-        function getRandomPastelColor() {
-            var r = Math.floor(Math.random() * 100) + 155; // Componente rojo en el rango [155, 255]
-            var g = Math.floor(Math.random() * 100) + 155; // Componente verde en el rango [155, 255]
-            var b = Math.floor(Math.random() * 100) + 155; // Componente azul en el rango [155, 255]
-            return 'rgb(' + r + ',' + g + ',' + b + ')';
-        }
-
-        function cambiarColorBorde() {
-            var logotipo = document.getElementById('logotipo');
-            logotipo.style.borderColor = getRandomPastelColor();
-        }
-
-        function efectoLuzRGB() {
-            setInterval(cambiarColorBorde, 500); // Cambia el color cada 0.5 segundos
-        }
-
-        efectoLuzRGB(); // Iniciar el efecto de luz RGB
-
-        let currentIndex = 0;
-
-        function showNextImage() {
-            const imagesContainer = document.querySelector('.carousel-images');
-            const images = imagesContainer.querySelectorAll('.image');
-            currentIndex = (currentIndex + 1) % images.length;
-            const translateX = -currentIndex * 100;
-            imagesContainer.style.transform = `translateX(${translateX}%)`;
-        }
-
-        setInterval(showNextImage, 3200);
     </script>
 </body>
 </html>
