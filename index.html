@@ -4,143 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stl1.css">
-     <link rel="shortcut icon" href="icon.png" />
-    <title> NatyTiam.com </title>
+    <link rel="shortcut icon" href="icon.png" />
+    <title>NatyTiam.com</title>
 </head>
 
 <body>
     <div class="header">
-      
-        <h1 class="h3color"  class="emoji-title">NATY TIAM</h1> 
-        <h2 class="h2color">Transformando Ideas en Accesorios de Moda</h2> 
+        <h1 class="h3color" class="emoji-title">NATY TIAM</h1>
+        <h2 class="h2color">Transformando Ideas en Accesorios de Moda</h2>
         <div class="contenedor-imagen"></div>
-        <nav>
-     
+        <nav></nav>
     </div>
-    
-    <center>   
+
+    <center>
         <div class="contenido-pagina">
             <ul>
-              <li><button class="active" onclick="document.location=' '" title="Volver a inicio">Inicio</button></li>
-              <li class="dropdown">
-                <button title="Productos">Productos &#11015;</button>
-                <ul class="dropdown-content">
-                  <li><button style="font-size: 15px;" onclick="document.location='amigu.html'" title="productos">Amigurumis &#x1F9F8;</button></li>
-                 <br>
-                  <li><button style="font-size: 15px;" onclick="document.location='repost.html'" title="Reposteria">Reposteria  &#x1F370;</button></li>
-                  <br>
-                  <li><button style="font-size: 15px;" onclick="document.location='Accseso.html'" title="Accesorios">Accesorios &#x1F48D;</button></li>
-                  <br>
-                  <li><button style="font-size: 15px;" onclick="document.location='gift.html'" title="Regalos">Regalos por ocaciones &#x1F381;</button></li>
-                </ul>
-              </li>
-              <li><button onclick="document.location=' '" title="Social Media">Redes sociales</button></li>
-            </ul>
-          </div>
-          
-    </center>
-                        <!--AQUI SE VA A HACER LOS PRODUCTOS MAS NUEVOS O VENDIDOS-->
- <br>
- <br>
- <br>
-    <!-- Contenido de la página -->
-    <h1   id="color-changing-heading" class="h3color">PRODUCTOS MAS NUEVOS</h1>
-<br>
-   <div class="carousel">
-      <div class="carousel-images">
-          <div class="image">
-              <img src="camaleon.jpg" alt="Amigurumi Camaleón">
-              <p class="text">Amigurumi Camaleón</p>
-          </div>
-          <div class="image">
-              <img src="IMG-20240428-WA0018.jpg" alt="Pastelitos">
-              <p class="text">Pastelitos</p>
-          </div>
-          <div class="image">
-              <img src="pollito.jpg" alt="Amigurumi pollito">
-              <p class="text">Amigurumi pollito</p>
-          </div>
-          <div class="image">
-            <img src="IMG-20240428-WA0007.jpg" alt="pulseras">
-            <p class="text">Pulseras</p>
-        </div>
-        <div class="image">
-          <img src="ram1.jpg" alt="Ramo de rosas eternas">
-          <p class="text">Rosas eternas</p>
-      </div>
-      </div>
-  </div>
-  <br>
-
-<center><img id="logotipo" src="icon.png" alt="Logotipo"></center> 
-
-<script>
-    // Obtiene el elemento h1
-    const heading = document.getElementById('color-changing-heading');
-  
-    // Define una función para cambiar el color de la sombra
-    function changeShadowColor() {
-      // Genera un valor hexadecimal aleatorio para el color
-      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(15);
-  
-      // Cambia el valor de la propiedad text-shadow
-      heading.style.textShadow = `1px 1px 2px, 0 0 30px ${randomColor}, 0 0 10px pink`;
-    }
-  
-    // Cambia el color de la sombra cada 3 segundos
-    setInterval(changeShadowColor, 2500);
-     </script>
-    <script>
-  // Obtiene el elemento h1
-  const heading2 = document.getElementById('color-changing-heading');
-
-  // Define una función para cambiar el color
-  function changeColor() {
-    if (heading.style.color === 'white') {
-      heading.style.color = 'fuchsia';
-    } else {
-      heading.style.color = 'white';
-    }
-  }
-
-  // Cambia el color cada 3 segundos
-  setInterval(changeColor, 2500);
-</script>
-
-<!-- cambio de color del logotipo -->
-<script>
-function getRandomPastelColor() {
-  var r = Math.floor(Math.random() * 100) + 155; // Componente rojo en el rango [155, 255]
-  var g = Math.floor(Math.random() * 100) + 155; // Componente verde en el rango [155, 255]
-  var b = Math.floor(Math.random() * 100) + 155; // Componente azul en el rango [155, 255]
-  return 'rgb(' + r + ',' + g + ',' + b + ')';
-}
-
-function cambiarColorBorde() {
-  var logotipo = document.getElementById('logotipo');
-  logotipo.style.borderColor = getRandomPastelColor();
-}
-
-function efectoLuzRGB() {
-  setInterval(cambiarColorBorde, 500); // Cambia el color cada 0.5 segundos
-}
-
-efectoLuzRGB(); // Iniciar el efecto de luz RGB
-
-let currentIndex = 0;
-
-function showNextImage() {
-    const imagesContainer = document.querySelector('.carousel-images');
-    const images = imagesContainer.querySelectorAll('.image');
-    currentIndex = (currentIndex + 1) % images.length;
-    const translateX = -currentIndex * 100;
-    imagesContainer.style.transform = `translateX(${translateX}%)`;
-}
-
-setInterval(showNextImage, 3200);
-
-
-</script>
-
-</body>
-</html>
+                <li><button class="active" onclick="document.location=' '" title="Volver a inicio">Inicio</button></li>
+                <li class="dropdown">
+                    <button title="Productos">Productos &#11015;</button>
+                    <ul class="dropdown-content">
+                        <li><button style="font-size: 15px;" onclick="document.location='amigu.html'" title="productos">Amigurumis &#x1F9F8;</button></li>
+                        <br>
+                        <li><button style="font-size: 15px;" onclick="document.location='repost.html'" title="Reposteria">Reposteria &#x1F370;</button></li>
+                        <br>
+                        <li><button style="font-size: 15px;" onclick="document.location='Accseso.html'" title="Accesor
