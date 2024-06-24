@@ -4,16 +4,18 @@ body {
     background-color: pink;
     color: #fff;
     font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
 #logotipo {
-  border-radius: 95%;
-  border: 9px solid rgb(224, 13, 199);
-  width: 310px;
-  transition: border-color 0.5s ease-in-out; /* Transición suave */
+    border-radius: 95%;
+    border: 9px solid rgb(224, 13, 199);
+    width: 310px;
+    transition: border-color 0.5s ease-in-out; /* Transición suave */
 }
+
 .header {
-    position: top;
+    position: relative;
     z-index: 1;
     text-align: center;
 }
@@ -32,17 +34,13 @@ body {
 }
 
 .contenido-pagina {
-    
     position: relative;
     z-index: 1;
- 
 }
-
 
 button {
     padding: 15px 20px;
     color: fuchsia;
-    
     border: springgreen;
     border-radius: 50px;
     margin: 4px 2px;
@@ -50,15 +48,15 @@ button {
 }
 
 button:hover {
-    color:  #000;
+    color: #000;
     background-color: pink;
 }
 
 ul {
     list-style-type: none;
     margin: 50px;
-    padding: px;
-    overflow: none;
+    padding: 0; /* Corregido: quitar px */
+    overflow: hidden; /* Evitar desbordamiento */
     width: fit-content;
 }
 
@@ -75,103 +73,107 @@ li {
     text-align: center;
     font-size: 50px;
     color: azure;
-  }
-  
-  .h2color {
+}
+
+.h2color {
     text-shadow: 1px 1px 2px, 0 0 25px rgb(212, 0, 255), 0 0 5px rgb(0, 123, 255);
     text-align: center;
     font-size: 50px;
     color: white;
-  }
+}
 
 .neon {
     font-size: 50px;
     color: black;
-    text-shadow: 0 0 10px turquoise, 0 0 20px turquoise, 0 0 30px turquoise , 0 0 40px blue, 0 0 70px blue,
-        0 0 80px cyan , 0 0 100px cyan, 0 0 150px cyan;
+    text-shadow: 0 0 10px turquoise, 0 0 20px turquoise, 0 0 30px turquoise, 0 0 40px blue, 0 0 70px blue,
+        0 0 80px cyan, 0 0 100px cyan, 0 0 150px cyan;
 }
 
 .text {
-font-size: 35px;
-text-decoration: wavy;
-text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
-
+    font-size: 35px;
+    text-decoration: wavy;
+    text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 }
 
 .offcanvas-content {
     padding: 20px;
-  }
-  .offcanvas.active {
+}
+
+.offcanvas.active {
     right: 0;
-  }
-  .content {
+}
+
+.content {
     position: relative;
     z-index: -1px;
     padding: 90px;
 }
+
 #image-container {
-    width: 1480px;
-    margin: 30px 0px;
+    width: 100%; /* Corregido: ajustar al 100% */
+    margin: 30px 0;
     text-align: center;
     white-space: nowrap;
     display: flex;
+    overflow: hidden; /* Ocultar el desbordamiento horizontal */
 }
+
 #image-container2 {
-    width: 1480px;
-    margin: -350px 0px;
+    width: 100%; /* Corregido: ajustar al 100% */
+    margin: -350px 0;
     text-align: center;
     white-space: nowrap;
     display: flex;
+    overflow: hidden; /* Ocultar el desbordamiento horizontal */
 }
 
 .carousel-images {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
 }
 
 .image {
-  min-width: 100%;
-  box-sizing: initial;
-  text-align: center;
+    min-width: 100%;
+    box-sizing: border-box; /* Corregido: usar border-box */
+    text-align: center;
 }
 
 .image img {
-  border-radius: 49%;
-  border: 2px solid #000;
-  width: 325px;
-  height: 350px;
+    border-radius: 49%;
+    border: 2px solid #000;
+    width: 325px;
+    height: 350px;
 }
 
 .image:hover img {
-transform: scale(1.1); /* Ajusta el valor según sea necesario */
-
+    transform: scale(1.1); /* Ajusta el valor según sea necesario */
 }
+
 .image img {
-transition: transform 0.3s ease; /* Ajusta la duración de la transición según sea necesario */
+    transition: transform 0.3s ease; /* Ajusta la duración de la transición según sea necesario */
 }
 
-  .contenido-pagina ul {
+.contenido-pagina ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .contenido-pagina ul li {
+}
+
+.contenido-pagina ul li {
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     min-width: 190px;
     z-index: 1;
-  }
-  
-  .dropdown-content li {
+}
+
+.dropdown-content li {
     display: block;
-  }
-  
-  .dropdown:hover .dropdown-content {
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  
+}
