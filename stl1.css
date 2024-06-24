@@ -133,7 +133,7 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 }
 
 .image {
-    min-width: 80%; /* Ancho mínimo de cada imagen */
+    min-width: 40%; /* Ancho mínimo de cada imagen */
     box-sizing: border-box; /* Usar el modelo de caja border-box */
     text-align: center;
     scroll-snap-align: center; /* Alineación de desplazamiento de carrusel */
@@ -144,6 +144,7 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
     border: 2px solid #000;
     max-width: 100%; /* Ancho máximo de la imagen */
     height: auto; /* Altura automática para mantener la proporción */
+    transition: transform 0.3s ease; /* Ajusta la duración de la transición según sea necesario */
 }
 
 @media (min-width: 768px) {
@@ -152,18 +153,9 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
         padding: 20px; /* Aumenta el espacio alrededor del carrusel en pantallas más grandes */
     }
 
-    .image {
-        min-width: 40%; /* Reducir el ancho mínimo de cada imagen en pantallas más grandes */
-    }
-}
-
-
 .image:hover img {
 transform: scale(1.1); /* Ajusta el valor según sea necesario */
 
-}
-.image img {
-transition: transform 0.3s ease; /* Ajusta la duración de la transición según sea necesario */
 }
 
   .contenido-pagina ul {
