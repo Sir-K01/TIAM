@@ -119,6 +119,24 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
     display: flex;
 }
 
+.carousel-images {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image {
+  min-width: 100%;
+  box-sizing: initial;
+  text-align: center;
+}
+
+.image img {
+  border-radius: 49%;
+  border: 2px solid #000;
+  width: 325px;
+  height: 350px;
+}
+
 .carousel {
     overflow: hidden; /* Ocultar cualquier contenido que se desborde */
     margin: 0 auto; /* Centrar el carousel horizontalmente */
