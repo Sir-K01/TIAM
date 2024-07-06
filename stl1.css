@@ -119,24 +119,25 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
     display: flex;
 }
 
-.carousel-images {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
+#myCarousel {
+  height: 700px;
+background-color: transparent;
 }
 
-.image {
-  min-width: 100%;
-  box-sizing: initial;
-  text-align: center;
+
+
+.carousel-indicators .active {
+  background-color: darkcyan;
 }
 
-.image img {
-  border-radius: 49%;
-  border: 2px solid #000;
-  width: 325px;
-  height: 350px;
+.carousel-item img {
+  object-fit: cover;
 }
 
+
+.carousel-item {
+  transition-duration: 0.3s !important;
+}
 .image:hover img {
     transform: scale(1.1); /* Ajustar el valor según sea necesario */
 }
