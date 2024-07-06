@@ -147,24 +147,9 @@ function cambiarColorBorde() {
 }
 
 function efectoLuzRGB() {
-  setInterval(cambiarColorBorde, 500); // Cambia el color cada 0.5 segundos
+  setInterval(cambiarColorBorde, 150); // Cambia el color cada 0.5 segundos
 }
-
 efectoLuzRGB(); // Iniciar el efecto de luz RGB
-
-let currentIndex = 0;
-
-function showNextImage() {
-    const imagesContainer = document.querySelector('.carousel-images');
-    const images = imagesContainer.querySelectorAll('.image');
-    currentIndex = (currentIndex + 1) % images.length;
-    const translateX = -currentIndex * 100;
-    imagesContainer.style.transform = `translateX(${translateX}%)`;
-}
-
-setInterval(showNextImage, 3200);
-
-
 </script>
 
 </body>
