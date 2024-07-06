@@ -120,14 +120,12 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 }
 
 #myCarousel {
-  height: 300px;
+  height: 450px;
 background-color: transparent;
 }
 
-
-
 .carousel-indicators .active {
-  background-color: fuchsia;
+  background-color: black;
 }
 
 .carousel-item img {
@@ -136,7 +134,7 @@ background-color: transparent;
 
 
 .carousel-item {
-  transition-duration: 0.3s !important;
+  transition-duration: 0.4s !important;
 }
 .image:hover img {
     transform: scale(1.1); /* Ajustar el valor según sea necesario */
