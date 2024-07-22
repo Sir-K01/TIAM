@@ -116,6 +116,7 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
     white-space: nowrap;
     display: flex;
 }
+
 #image-container2 {
     width: 1480px;
     margin: -350px 0px;
@@ -129,21 +130,23 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 }
 
 .carousel-item img {
-  object-fit: contain;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto; /* Centra las imágenes */
 }
 
+.carousel-inner {
+    text-align: center; /* Centra el contenido del carrusel */
+}
 
 .carousel-item {
   transition-duration: 0.3s !important;
 }
  
-
 #myCarousel {
-  height: 450px;
-    
+    height: 450px;
+    margin: 0 auto; /* Centra el contenedor */
 }
-
-
 
 .image {
   min-width: 100%;
