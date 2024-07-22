@@ -127,8 +127,6 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 
 .carousel-item img {
     object-fit: contain;
-    display: block;
-    margin: 0 auto; /* Centra las imágenes */
 }
 
 .carousel-item {
