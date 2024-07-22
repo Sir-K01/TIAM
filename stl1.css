@@ -24,7 +24,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('lotus.jpg');
+    background-image: url('C:/Users/08snk/Downloads/TIAM/imag/lotus.jpg');
     background-size: cover;
     filter: blur(6px);
     filter: contrast(8px);
@@ -32,13 +32,17 @@ body {
 }
 
 .contenido-pagina {
+    
     position: relative;
     z-index: 1;
+ 
 }
+
 
 button {
     padding: 15px 20px;
     color: fuchsia;
+    
     border: springgreen;
     border-radius: 50px;
     margin: 4px 2px;
@@ -91,6 +95,7 @@ li {
 font-size: 35px;
 text-decoration: wavy;
 text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
+
 }
 
 .offcanvas-content {
@@ -102,7 +107,7 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
   .content {
     position: relative;
     z-index: -1px;
-    padding: 95px;
+    padding: 90px;
 }
 #image-container {
     width: 1480px;
@@ -119,24 +124,29 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
     display: flex;
 }
 
-#myCarousel {
-  height: 500px;
+.carousel-images {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
 }
 
-.carousel-indicators .active {
-  background-color: black;
+.image {
+  min-width: 100%;
+  box-sizing: initial;
+  text-align: center;
 }
 
-.carousel-item img {
-  object-fit: cover;
+.image img {
+  border-radius: 49%;
+  border: 2px solid #000;
+  width: 325px;
+  height: 350px;
 }
 
-
-.carousel-item {
-  transition-duration: 0.4s !important;
-}
 .image:hover img {
-    transform: scale(1.1); /* Ajustar el valor según sea necesario */
+transform: scale(1.2); /* Ajusta el valor según sea necesario */
+}
+.image img {
+transition: transform 0.5s ease; /* Ajusta la duración de la transición según sea necesario */
 }
 
   .contenido-pagina ul {
@@ -159,6 +169,8 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
   .dropdown-content li {
     display: block;
   }
+  
+ 
   
   .dropdown:hover .dropdown-content {
     display: block;
