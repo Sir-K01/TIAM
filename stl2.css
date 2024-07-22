@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+#logotipo {
+  border-radius: 98%;
+  border: 9px solid rgb(224, 13, 199);
+  width: 310px;
+  transition: border-color 0.3s ease-in-out; /* Transición suave */
+}
+.header {
+    position: top;
+    z-index: 1;
+    text-align: center;
+}
+
+.contenedor-imagen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('C:/Users/08snk/Downloads/TIAM/imag/lotus.jpg');
+    background-size: cover;
+    filter: blur(6px);
+    filter: contrast(8px);
+    z-index: -1;
+}
+
+.contenido-pagina {
+  position: relative;
+  z-index: 1;
+
+}
+
+.content {
+    position: relative;
+    z-index: -1;
+    padding: 99px;
+}
+
+.image {
+    display: inline-block;
+    width: 960px;
+    height: 950px;
+    margin: 50 10px;
+
+}
+
+#image-container {
+    width: 1380px;
+    margin: -10px 50px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: auto;
+    display: flex;
+}
+
+#image-container2 {
+    width: 1385px;
+    margin: -580px 33px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: auto;
+    display: flex;
+}
+
+#image-container3 {
+    width: 1385px;
+    margin: -580px 33px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: auto;
+    display: flex;
+}
+
+#image-container4 {
+    width: 1500px;
+    margin: -410px -5px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: auto;
+    display: flex;
+}
+.h2color {
+  text-align: center;
+  text-shadow: 2px 4px 5px red;
+  margin: 0px auto;
+  color: cyan;
+  padding: 2px;
+  background-color: darkslategray;
+  width: 40%;
+  opacity: 0.9;
+}
+  
+.hcolor {
+  text-shadow: 1px 1px 2px white, 0 0 25px cyan;
+  text-align: center;
+  margin: 4px;
+  font-size: medium;
+}
+
+.h3color {
+  text-shadow: 1px 1px 2px, 0 0 25px cyan, 0 0 5px darkblue;
+  text-align: center;
+  margin: 4px;
+  font-size: 30px;
+  color: azure;
+}
+
+.emoji-title:before {
+  content: attr(title);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.neon {
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de,
+    0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+
+.nav-link {
+    color: #000;
+  }
+
+  .nav-link:hover {
+    color: #000;
+    background-color: violet;
+  }
+
+  button {
+    background-color: mediumorchid;
+    border-radius: 30px;
+    padding: 20px 20px;
+    margin: 10px 2px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    transform: scale(1.2);
+    background: violet;
+    transition: all .2s ease;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 50px;
+    padding: px;
+    overflow: none;
+    width: fit-content;
+}
+
+li {
+    float: left;
+}
+
+.active {
+    background-color: pink;
+}
+.contenido-pagina ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contenido-pagina ul li {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 190px;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.image:hover img {
+transform: scale(1.1); /* Ajusta el valor según sea necesario */
+}
+.image img {
+transition: transform 0.2s ease; /* Ajusta la duración de la transición según sea necesario */
+}
