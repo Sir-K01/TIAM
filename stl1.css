@@ -136,8 +136,8 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 }
 
 .image img {
-  border-radius: 49%;
-  border: 2px solid #000;
+  border-radius: 40%;
+  border: 3px solid whitesmoke
   width: 325px;
   height: 350px;
 }
