@@ -124,10 +124,26 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
     display: flex;
 }
 
-.carousel-images {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
+.carousel-indicators .active {
+  background-color: darkcyan;
 }
+
+.carousel-item img {
+  object-fit: cover;
+}
+
+
+.carousel-item {
+  transition-duration: 0.3s !important;
+}
+ 
+
+#myCarousel {
+  height: 700px;
+background-color: transparent;
+}
+
+
 
 .image {
   min-width: 100%;
