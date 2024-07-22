@@ -125,7 +125,7 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 }
 
 .carousel-indicators .active {
-  background-color: darkcyan;
+  background-color: pink;
 }
 
 .carousel-item img {
@@ -139,8 +139,7 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
  
 
 #myCarousel {
-  height: 700px;
-background-color: transparent;
+  height: 400px;
 }
 
 
