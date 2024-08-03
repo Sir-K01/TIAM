@@ -24,7 +24,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('C:/Users/08snk/Downloads/TIAM/imag/lotus.jpg');
+    background-image: url('lotus.jpg');
     background-size: cover;
     filter: blur(6px);
     filter: contrast(8px);
@@ -125,7 +125,7 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 }
 
 .carousel-images {
-  display: flex;
+  display: block;
   transition: transform 0.3s ease-in-out;
 }
 
