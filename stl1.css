@@ -123,8 +123,12 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 }
 
 #myCarousel {
-    height: 480px;
+    height: 510px;
     margin: 0 auto; /* Centra el contenedor */
+}
+
+.carousel-item {
+  transition-duration: 0.3s !important;
 }
 
 .carousel-item img {
@@ -133,12 +137,17 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
     margin: 0 auto; /* Centra las imágenes */
 }
 
+.carousel-indicators .active {
+  background-color: darkcyan;
+}
+
 .carousel-inner {
     text-align: center; /* Centra el contenido del carrusel */
 }
 
 .carousel-images {
   transition: transform 0.3s ease-in-out;
+    
 }
 
 .image {
