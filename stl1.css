@@ -24,7 +24,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('lotus.jpg');
+    background-image: url('C:/Users/08snk/Downloads/TIAM/imag/lotus.jpg');
     background-size: cover;
     filter: blur(6px);
     filter: contrast(8px);
@@ -32,14 +32,17 @@ body {
 }
 
 .contenido-pagina {
+    
     position: relative;
     z-index: 1;
+ 
 }
 
 
 button {
     padding: 15px 20px;
     color: fuchsia;
+    
     border: springgreen;
     border-radius: 50px;
     margin: 4px 2px;
@@ -113,7 +116,6 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
     white-space: nowrap;
     display: flex;
 }
-
 #image-container2 {
     width: 1480px;
     margin: -350px 0px;
@@ -122,32 +124,9 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
     display: flex;
 }
 
-#myCarousel {
-    height: 510px;
-    margin: 0 auto; /* Centra el contenedor */
-}
-
-.carousel-item {
-  transition-duration: 0.3s !important;
-}
-
-.carousel-item img {
-    object-fit: contain;
-    display: block;
-    margin: 0 auto; /* Centra las imágenes */
-}
-
-.carousel-indicators .active {
-  background-color: darkcyan;
-}
-
-.carousel-inner {
-    text-align: center; /* Centra el contenido del carrusel */
-}
-
 .carousel-images {
+  display: flex;
   transition: transform 0.3s ease-in-out;
-    
 }
 
 .image {
@@ -157,8 +136,8 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 }
 
 .image img {
-  border-radius: 40%;
-  border: 3px solid whitesmoke
+  border-radius: 49%;
+  border: 2px solid #000;
   width: 325px;
   height: 350px;
 }
@@ -196,4 +175,4 @@ transition: transform 0.5s ease; /* Ajusta la duración de la transición según
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
+
