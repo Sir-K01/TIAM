@@ -138,7 +138,6 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 }
 
 .carousel-images {
-  display: flex;
   transition: transform 0.3s ease-in-out;
 }
 
