@@ -32,17 +32,13 @@ body {
 }
 
 .contenido-pagina {
-    
     position: relative;
     z-index: 1;
- 
 }
-
 
 button {
     padding: 15px 20px;
     color: fuchsia;
-    
     border: springgreen;
     border-radius: 50px;
     margin: 4px 2px;
@@ -127,6 +123,23 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 .carousel-images {
   display: block;
   transition: transform 0.3s ease-in-out;
+}
+
+#myCarousel {
+  height: 700px;
+background-color: transparent;
+}
+
+.carousel-indicators .active {
+  background-color: darkcyan;
+}
+
+.carousel-item img {
+  object-fit: cover;
+}
+
+.carousel-item {
+  transition-duration: 0.3s !important;
 }
 
 .image {
