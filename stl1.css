@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: pink;
     color: #fff;
     font-family: Arial, sans-serif;
 }
@@ -18,13 +17,14 @@ body {
     text-align: center;
 }
 
+
 .contenedor-imagen {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('lotus.jpg');
+    background-image: url('C:/Users/08snk/Downloads/TIAM/imag/lotus.jpg');
     background-size: cover;
     filter: blur(6px);
     filter: contrast(8px);
@@ -36,9 +36,11 @@ body {
     z-index: 1;
 }
 
+
 button {
     padding: 15px 20px;
     color: fuchsia;
+    
     border: springgreen;
     border-radius: 50px;
     margin: 4px 2px;
@@ -66,6 +68,16 @@ li {
     background-color: pink;
 }
 
+.nav-link {
+    color: #000;
+  }
+
+  .nav-link:hover {
+    color: #000;
+    background-color: violet;
+  }
+
+
 .h3color {
     text-shadow: 1px 1px 2px, 0 0 25px rgb(174, 0, 255), 0 0 5px darkblue;
     text-align: center;
@@ -91,8 +103,14 @@ li {
 font-size: 35px;
 text-decoration: wavy;
 text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
-
 }
+
+.text2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    text-decoration: wavy;
+    text-shadow: 1px 1px 5px, 0 0 28px rgba(232, 19, 211, 0.93), 0 0 5px rgb(9, 17, 27);
+    }
 
 .offcanvas-content {
     padding: 20px;
@@ -106,10 +124,11 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
     padding: 90px;
 }
 #image-container {
-    width: 1480px;
-    margin: 30px 0px;
+    width: 1380px;
+    margin: -10px 50px;
     text-align: center;
     white-space: nowrap;
+    overflow: auto;
     display: flex;
 }
 #image-container2 {
@@ -120,72 +139,62 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
     display: flex;
 }
 
+
 .carousel-images {
-  display: block;
+    display: flex;
+    margin: 360px, 220px;
+    padding: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+.carousel-item {
+    transition: step-start;
+    transition-duration: 0.3s !important;   
+  }
+
+  .image {
+    display: contents;
+    width: 960px;
+    height: 950px;
+    margin: 50 10px;
+
+}
+.image img {
+  border-radius: 3%;
+  border: 11px solid whitesmoke;
+  width: 350px;
+  height: 350px;
   transition: transform 0.3s ease-in-out;
 }
 
-#myCarousel {
-  height: 700px;
-background-color: transparent;
-}
-
-.carousel-indicators .active {
-  background-color: darkcyan;
-}
-
-.carousel-item img {
-  object-fit: cover;
-}
-
-.carousel-item {
-  transition-duration: 0.3s !important;
-}
-
-.image {
-  min-width: 100%;
-  box-sizing: initial;
-  text-align: center;
-}
-
-.image img {
-  border-radius: 49%;
-  border: 2px solid #000;
-  width: 325px;
-  height: 350px;
-}
-
 .image:hover img {
-transform: scale(1.2); /* Ajusta el valor según sea necesario */
+transform: scale(1.3); /* Ajusta el valor según sea necesario */
+transition: transform 0.3s ease-in-out;
 }
 .image img {
-transition: transform 0.5s ease; /* Ajusta la duración de la transición según sea necesario */
-}
-
-  .contenido-pagina ul {
+    transition: transform 0.3s ease-in-out;
+    }
+.contenido-pagina ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
   
-  .contenido-pagina ul li {
+.contenido-pagina ul li {
     display: inline-block;
-  }
+}
   
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     min-width: 190px;
     z-index: 1;
-  }
+}
   
-  .dropdown-content li {
+.dropdown-content li {
     display: block;
-  }
+}
   
- 
-  
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-
+}
+  
