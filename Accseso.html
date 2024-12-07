@@ -6,35 +6,203 @@
     <link rel="stylesheet" href="stl1.css">
     <title>Accesorios</title>
 </head>
+
+<style>
+.image-contain {
+  width: 1100px;
+  margin: 50px 30px;
+  text-align: center;
+  white-space: nowrap;
+  display: grid;
+  overflow-block: clip;
+}
+
+.image-contain2 {
+  width: 1100px;
+  margin: -1458px 399px;
+  text-align: center;
+  white-space: nowrap;
+  display: grid;
+}
+ 
+.image img {
+  border-radius: 4%;
+  border: 15px solid violet;
+  width: 350px;
+  height: 350px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.image:hover img {
+  transform: scale(1.1);
+  /* Ajusta el valor según sea necesario */
+  transition: transform 0.3s ease-in-out;
+}
+
+.image img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: plum;
+    width: 290px;
+    height: 129px;
+    
+    box-shadow: 1px 15px 22px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: initial;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin: auto;
+}
+</style>
+
 <body>
-    <div class="contenedor-imagen"></div>
-<CENTER>
-    <p class="h2color" style="font-size: 55px;">&#x1F528; En construccion &#x1F528;</p>
-</CENTER>
 
+    <header>
+      <div class="contenedor-imagen"> </div>
+      <nav>
+        <div class="logo">
+          <img src="imag\icon.png" alt="Logo de la empresa">
+        </div>
+        
+        <h1 id="color-changing-heading" style="white-space: pre;" class="h3color">NATY TIAM </h1>
 
+        <ul>
+          <li class="dropdown">
+            <a class="h4color" href="#">Productos &#11015;</a>
+            <div class="dropdown-content">
+              <a class="h4color" href="/amigu.html">Amigurumis &#x1F9F8;</a>
+              <br>
+              <br>
+              <a class="h4color" href="/repost.html">Reposteria &#x1F370;</a>
+              <br>
+              <br>
+              <a class="h4color" href="/gift.html">Regalos por ocasion&#x1F381;</a>
+              <br>
+            </div>
+          <li> <a class="h4color" href="/redes_soc.html">Redes Sociales</a></li>
+          <li> <a class="h4color" href="index.html">Inicio</a></li>
+          </div>
+          </li>
+      </nav>
+    </header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center><h1 class="text" style="text-align: left; margin-left: 90px;">PULSERAS</h1></center>
+<div class="image-contain">
+  <div class="image">
+    <img src="merch\IMG-20240428-WA0017.jpg" alt="Amigurumi Lechuza"
+      style="border-radius:3%;border: 5px solid whitesmoke; width: 330px; height: 300px;">
+  </div>
+<br>
+  <div class="image">
+    <img src="merch\IMG-20240428-WA0019.jpg" alt="Amigurumi Lechuza"
+      style="border-radius:3%;border: 5px solid whitesmoke; width: 330px; height: 300px;">
+  </div>
+<br>
+  <div class="image">
+    <img src="merch\IMG-20240428-WA0007.jpg" alt="Amigurumi Lechuza"
+      style="border-radius:3%;border: 5px solid whitesmoke; width: 330px; height: 300px;">
+  </div>
+<br>
+  <div class="image">
+    <img src="merch\IMG-20240428-WA0006.jpg" alt="Amigurumi Lechuza"
+      style="border-radius:3%;border: 5px solid whitesmoke; width: 330px; height: 300px;">
+  </div>
+</div>
+<br>
+<div class="image-contain2">
+<center><h1 class="text" style="text-align: center; margin-left: -840px; margin-top: auto;">
+  PULSERAS</h1></center>
+  <br>
+  <br>
+  <div class="image">
+    <img src="merch/empty.png" alt="Amigurumi Lechuza"
+      style="border-radius:3%;border: 5px solid whitesmoke; width: 330px; height: 300px;">
+  </div>
+<br>
+  <div class="image">
+    <img src="merch/empty.png" alt="Amigurumi Lechuza"
+      style="border-radius:3%;border: 5px solid whitesmoke; width: 330px; height: 300px;">
+  </div>
+<br>
+  <div class="image">
+    <img src="merch/empty.png" alt="Amigurumi Lechuza"
+      style="border-radius:3%;border: 5px solid whitesmoke; width: 330px; height: 300px;">
+  </div>
+<br>
+  <div class="image">
+    <img src="merch/empty.png" alt="Amigurumi Lechuza"
+      style="border-radius:3%;border: 5px solid whitesmoke; width: 330px; height: 300px;">
+  </div>
+</div>
 
 
 <br>
-<center><img style="filter: sepia(50px);" src="icon.png" alt="foto"></center> 
-    <script>
-    function getRandomPastelColor() {
-      var r = Math.floor(Math.random() * 100) + 155; // Componente rojo en el rango [155, 255]
-      var g = Math.floor(Math.random() * 100) + 155; // Componente verde en el rango [155, 255]
-      var b = Math.floor(Math.random() * 100) + 155; // Componente azul en el rango [155, 255]
-      return 'rgb(' + r + ',' + g + ',' + b + ')';
+<br>
+<br>
+<br>
+
+<script>
+    // Obtiene el elemento h1
+    const heading = document.getElementById('color-changing-heading');
+  
+    // Define una función para cambiar el color de la sombra
+    function changeShadowColor() {
+      // Genera un valor hexadecimal aleatorio para el color
+      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(15);
+  
+      // Cambia el valor de la propiedad text-shadow
+      heading.style.textShadow = `1px 1px 2px, 0 0 30px ${randomColor}, 0 0 10px pink`;
     }
-    
-    function cambiarColorBorde() {
-      var logotipo = document.getElementById('logotipo');
-      logotipo.style.borderColor = getRandomPastelColor();
+  
+    // Cambia el color de la sombra cada 3 segundos
+    setInterval(changeShadowColor, 2500);
+
+    // Obtiene el elemento h1
+  const heading2 = document.getElementById('color-changing-heading');
+
+  // Define una función para cambiar el color
+  function changeColor() {
+    if (heading.style.color === 'white') {
+      heading.style.color = 'fuchsia';
+    } else {
+      heading.style.color = 'white';
     }
-    
-    function efectoLuzRGB() {
-      setInterval(cambiarColorBorde, 500); // Cambia el color cada 0.5 segundos
-    }
-    
-    efectoLuzRGB(); // Iniciar el efecto de luz RGB
-    </script>
+  }
+
+  // Cambia el color cada 3 segundos
+  setInterval(changeColor, 2500);
+
+                                  <!-- cambio de color del logotipo -->
+function getRandomPastelColor() {
+  var r = Math.floor(Math.random() * 100) + 155; // Componente rojo en el rango [155, 255]
+  var g = Math.floor(Math.random() * 100) + 105; // Componente verde en el rango [155, 255]
+  var b = Math.floor(Math.random() * 100) + 155; // Componente azul en el rango [155, 255]
+  return 'rgb(' + r + ',' + g + ',' + b + ')';
+}
+
+function cambiarColorBorde() {
+  var logotipo = document.getElementById('logotipo');
+  logotipo.style.borderColor = getRandomPastelColor();
+}
+
+function efectoLuzRGB() {
+  setInterval(cambiarColorBorde, 300); // Cambia el color cada 0.5 segundos
+}
+
+efectoLuzRGB(); // Iniciar el efecto de luz RGB
+
+let currentIndex = 0;
+</script>
+
 </body>
 </html>

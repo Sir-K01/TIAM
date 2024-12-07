@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="stl2.css">
+  <link rel="stylesheet" href="/stl2.css">
   <title>Amigurumis</title>
 </head>
 
@@ -20,23 +21,26 @@
   <center>
     <div class="contenido-pagina">
       <ul>
-        <li><button class="active" onclick="document.location='index.html'"
+        <li><button class="active" onclick="document.location='/index.html'"
             title="Volver a inicio">Inicio</button></li>
         <li class="dropdown">
           <button title="Productos">Productos &#11015;</button>
           <ul class="dropdown-content">
-            <li><button style="font-size: 15px;" onclick="document.location='amigu.html'" title="productos">Amigurumis &#x1F9F8;</button></li>
+            <li><button style="font-size: 15px;" onclick="document.location='/amigu.html'"
+                title="productos">Amigurumis &#x1F9F8;</button></li>
             <br>
-            <li><button style="font-size: 15px;" onclick="document.location='repost.html'" title="Reposteria">Reposteria &#x1F370;</button></li>
+            <li><button style="font-size: 15px;" onclick="document.location='/repost.html'"
+                title="Reposteria">Reposteria &#x1F370;</button></li>
             <br>
             <li><button style="font-size: 15px;"
-                onclick="document.location='Accseso.html'" title="Accesorios">Accesorios
+                onclick="document.location='/Accseso.html'" title="Accesorios">Accesorios
                 &#x1F48D;</button></li>
             <br>
-            <li><button style="font-size: 15px;" onclick="document.location='gift.html'" title="Regalos">Regalos por ocaciones &#x1F381;</button></li>
+            <li><button style="font-size: 15px;" onclick="document.location='/gift.html'"
+                title="Regalos">Regalos por ocaciones &#x1F381;</button></li>
           </ul>
         </li>
-        <li><button onclick="document.location='redes_soc.html'" title="Social Media">Redes sociales</button></li>
+        <li><button onclick="document.location='/redes_soc.html'" title="Social Media">Redes sociales</button></li>
       </ul>
     </div>
 
@@ -47,35 +51,31 @@
   <br>
   <br>
   <br>
-  <center><img id="logotipo" src="icon.png" alt="foto"></center>
+  <center><img id="logotipo" src="/imag/icon.png" alt="foto"></center>
   <br>
   <br>
   <div id="image-container" style="margin-top: auto;">
     <div class="image">
-      <img src="camaleon.jpg" alt="Camaleón" usemap="#camal"
+      <img src="/merch/camaleon.jpg" alt="Camaleón" 
         style="border-radius:40%;border: 3px solid whitesmoke;width: 200px; height: 250px; width: 220px;">
       <p class="h3color">CAMALEÓN</p>
-
-      <map name="camal">
-        <area shape="rect" coords="32,25,425,470" alt="ranita" href="C:\Users\08snk\Downloads\TIAM\inf/rani.txt">
-      </map>
     </div>
 
     <div class="image">
-      <img src="pollito.jpg" alt="Pollito"
+      <img src="/merch\pollito.jpg" alt="Pollito"
        class="imagen-con-tooltip"
        style="border-radius:40%;border: 3px solid whitesmoke; width: 200px; height: 250px; width: 220px;">
       <p class="h3color">Pollito</p>
     </div>
 
     <div class="image">
-      <img src="rana.jpg" alt="Rana"
+      <img src="\merch\rana.jpg" alt="Rana"
         style="border-radius:40%;border: 3px solid whitesmoke; width: 200px; height: 250px; width: 220px;">
       <p class="h3color">Rana</p>
     </div>
 
     <div class="image">
-      <img src="tortuga.jpg" alt="Tortuga"
+      <img src="\merch\tortuga.jpg" alt="Tortuga"
         style="border-radius:40%;border: 3px solid whitesmoke; width: 200px; height: 250px; width: 220px;">
       <p class="h3color">Tortuga</p>
     </div>
@@ -83,25 +83,25 @@
 
   <div id="image-container2">
     <div class="image">
-      <img src="yoda_bebe.jpg" alt="yoda_bebe"
+      <img src="\merch\yoda_bebe.jpg" alt="yoda_bebe"
         style="border-radius:40%;border: 3px solid whitesmoke; width: 200px; height: 250px; width: 220px;">
       <p class="h3color">Baby Yoda</p>
     </div>
 
     <div class="image">
-      <img src="Ballena_azul.jpg" alt="Ballena azul"
+      <img src="\merch\Ballena_azul.jpg" alt="Ballena azul"
         style="border-radius:40%;border: 3px solid whitesmoke; width: 200px; height: 250px; width: 220px;">
       <p class="h3color">Ballenita azul</p>
     </div>
 
     <div class="image">
-      <img src="ballena_amarilla.jpg" alt="Tortuga"
+      <img src="\merch\ballena_amarilla.jpg" alt="Tortuga"
         style="border-radius:40%;border: 3px solid whitesmoke; width: 200px; height: 250px; width: 220px;">
       <p class="h3color">Ballenita amarilla</p>
     </div>
 
     <div class="image">
-      <img src="ballena_roja.jpg" alt="Ballena roja"
+      <img src="\merch\ballena_roja.jpg" alt="Ballena roja"
         style="border-radius:40%;border: 3px solid whitesmoke; width: 200px; height: 250px; width: 220px;">
       <p class="h3color">Ballenita Roja</p>
     </div>
@@ -109,32 +109,41 @@
 
   <div id="image-container3">
     <div class="image">
-      <img src="lechuz2.jpg" alt="Lechuza"
+      <img src="\merch\lechuz2.jpg" alt="Lechuza"
         style="border-radius:40%;border: 3px solid whitesmoke; width: 200px; height: 250px; width: 220px;">
       <p class="h3color">Lechuza</p>
-    </div>
+    </div>+
 
     <div class="image">
-      <img src="monedero.jpg" alt="monedero rojo"
+      <img src="\merch\monedero.jpg" alt="monedero rojo"
         style="border-radius:40%;border: 3px solid whitesmoke; width: 200px; height: 250px; width: 220px;">
       <p class="h3color">Monedero</p>
     </div>
 
     <div class="image">
-      <img src="vaqui.jpg" alt="Vaquita"
+      <img src="\merch\vaqui.jpg" alt="Vaquita"
         style="border-radius:40%;border: 3px solid whitesmoke; width: 200px; height: 250px; width: 220px;">
       <p class="h3color">Vaquita</p>
     </div>
 
     <div class="image">
-      <img src="empty.png" alt="empty"
+      <img src="\merch\empty.png" alt="empty"
         style="border-radius:40%;border: 3px solid whitesmoke; width: 200px; height: 250px; width: 220px;">
       <p class="h3color">PRONTO!!!</p>
     </div>
   </div>
   <br>
 
-    <script>
+  <center>
+    <h1 id="color-changing-heading" class="h3color">&#11015; Realiza tu pedido aqui &#11015;</h1>
+  </center>
+  <br>
+  <center><button class="nav-link btn btn-link" onclick="document.location='pedidos.php'">Realizar pedido</button>
+  </center>
+
+
+
+  <script>
     function getRandomPastelColor() {
       var r = Math.floor(Math.random() * 100) + 155; // Componente rojo en el rango [155, 255]
       var g = Math.floor(Math.random() * 100) + 155; // Componente verde en el rango [155, 255]
@@ -179,9 +188,16 @@
         heading.style.color = 'white';
       }
     }
+
     // Cambia el color cada 3 segundos
     setInterval(changeColor, 2500);
 
-  </script>
+    //aqui la funcion para el panel de info de cada amigurumi, como? Quien sabe.
+    
+
+
+</script>
+
 </body>
+
 </html>

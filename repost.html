@@ -1,49 +1,244 @@
 <!DOCTYPE html>
 <html lang="es-MX">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stl1.css">
-    <link rel="shortcut icon" href="icon.png" />
     <title>Reposteria</title>
 </head>
+
+<style>
+  .dropdown {
+position: relative;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+min-width: 290px;
+box-shadow: 1px 20px 16px 0px thistle;
+z-index: 1;
+font-size: 15px;
+text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.image:hover img {
+transform: scale(1.1); /* Ajusta el valor según sea necesario */
+}
+.image img {
+transition: transform 0.3s ease; /* Ajusta la duración de la transición según sea necesario */
+}
+
+#login-form {
+display: flex;
+flex-direction: column;
+}
+
+#login-form label {
+margin-bottom: 5px;
+}
+
+#login-form input,
+#login-form select {
+margin-bottom: 10px;
+padding: 5px;
+font-size: 15px;
+}
+
+#login-form button {
+background-color: silver;
+color: black;
+padding: 10px;
+font-size: 19px;
+cursor: pointer;
+}
+
+#login-form button:hover {
+background-color: violet;
+}
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 150%;
+height: 160%;
+overflow: auto;
+}
+
+.modal-content {
+color: cadetblue;
+margin: 15% auto;
+padding: 20px;
+border: 10px solid slategrey;
+width: 300px;
+}
+
+.close {
+color: blueviolet;
+float: right;
+font-size: 28px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+color: aquamarine;
+text-decoration: none;
+cursor: pointer;
+}
+.dropdown {
+position: relative;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: plum;
+width: 315px;
+height: 182px;
+
+box-shadow: 1px 15px 22px 0px rgb(245, 162, 162);
+z-index: 1;
+text-align: initial;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+margin: auto;
+}
+.image:hover img {
+transform: scale(1.1); /* Ajusta el valor según sea necesario */
+}
+.image img {
+transition: transform 0.3s ease; /* Ajusta la duración de la transición según sea necesario */
+}
+</style>
+
 <body>
-    <center> <div class="contenido-pagina">
+
+  
+  <header>
+    <div class="contenedor-imagen"> </div>
+    <nav>
+      <div class="logo">
+        <img src="imag\icon.png"" alt="Logo de la empresa">
+      </div>
+      <h1 id="color-changing-heading" style="white-space: pre;" class="h3color">NATY TIAM </h1>
       <ul>
-        <li><button class="active" onclick="document.location='index.html'" title="Volver a inicio">Inicio</button></li>      
-          <li><button onclick="document.location=' '" title="Social Media">Redes sociales</button></li>
+      
+        <li class="dropdown">
+          <a class="h4color" href="#">Productos &#11015;</a>
+          <div class="dropdown-content">
+            <br>
+            <a class="h4color" href="/Accseso.html">Accesorios &#x1F48D; &#x1F4FF;</a>
+            <br>
+            <br>
+            <a class="h4color" href="/amigu.html">Amigurumis &#x1F9F8;</a>
+            <br>
+            <br>
+            <a class="h4color" href="/repost.html">Reposteria &#x1F370;</a>
+            <br>
+            <br>
+            <a class="h4color" href="/gift.html">Regalos por ocasion&#x1F381; &#x1F4C5;</a>
+            <br>
+          </div>
+        <li> <a class="h4color" href="/redes_soc.html">Redes Sociales  </a></li>
+        <li> <a class="h4color" href="/index.html">Inicio</a></li>
+        </div>
+        </div>
+        </li>
       </ul>
-  </div> </center> 
+    </nav>
+  </header>
     <br>
-    <br>
-    <div class="contenedor-imagen"></div>
-<CENTER>
-    <p class="h2color" style="font-size: 55px;">En construccion &#x1F528;</p>
-</CENTER>
+    <center><div class="image-container" style=" margin: 30px 40px; padding: 5px; margin-top: 6px;cursor: pointer;">
+        <div class="image">
+          <img src="merch\IMG-20240428-WA0022.jpg" alt="Amigurumi Lechuza"  
+          style="border-radius:3%;border: 5px solid whitesmoke; width: 330px; height: 300px; ">
+        </div>
+      
+      <div class="image">
+      <img src= "merch\IMG-20240428-WA0018.jpg" alt="Arreglo de luces led en forma de Corazón"
+        style="border-radius:3%;border: 5px solid whitesmoke; width: 330px; height: 300px;">
+      </div>
+      
+      
+      </div></center>
+      <br>
+      <br>
+
+
+    <center><img id="logotipo" src="imag/icon.png" alt="Logotipo"></center> 
 
 
 
 
-<br>
-<center><img style="filter: sepia(50px);" src="icon.png" alt="foto"></center> 
+
+
+
+
+
+
+
+
+
+
+
     <script>
-    function getRandomPastelColor() {
-      var r = Math.floor(Math.random() * 100) + 155; // Componente rojo en el rango [155, 255]
-      var g = Math.floor(Math.random() * 100) + 155; // Componente verde en el rango [155, 255]
-      var b = Math.floor(Math.random() * 100) + 155; // Componente azul en el rango [155, 255]
-      return 'rgb(' + r + ',' + g + ',' + b + ')';
-    }
+        function getRandomPastelColor() {
+          var r = Math.floor(Math.random() * 100) + 155; // Componente rojo en el rango [155, 255]
+          var g = Math.floor(Math.random() * 100) + 155; // Componente verde en el rango [155, 255]
+          var b = Math.floor(Math.random() * 100) + 155; // Componente azul en el rango [155, 255]
+          return 'rgb(' + r + ',' + g + ',' + b + ')';
+        }
     
-    function cambiarColorBorde() {
-      var logotipo = document.getElementById('logotipo');
-      logotipo.style.borderColor = getRandomPastelColor();
-    }
+        function cambiarColorBorde() {
+          var logotipo = document.getElementById('logotipo');
+          logotipo.style.borderColor = getRandomPastelColor();
+        }
     
-    function efectoLuzRGB() {
-      setInterval(cambiarColorBorde, 500); // Cambia el color cada 0.5 segundos
-    }
+        function efectoLuzRGB() {
+          setInterval(cambiarColorBorde, 500); // Cambia el color cada 0.5 segundos
+        }
     
-    efectoLuzRGB(); // Iniciar el efecto de luz RGB
+        efectoLuzRGB(); // Iniciar el efecto de luz RGB
+     
+        // Obtiene el elemento h1
+        const heading = document.getElementById('color-changing-heading');
+    
+        // Define una función para cambiar el color de la sombra
+        function changeShadowColor() {
+          // Genera un valor hexadecimal aleatorio para el color
+          const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(15);
+    
+          // Cambia el valor de la propiedad text-shadow
+          heading.style.textShadow = `1px 1px 2px, 0 0 30px ${randomColor}, 0 0 10px pink`;
+        }
+    
+        // Cambia el color de la sombra cada 3 segundos
+        setInterval(changeShadowColor, 2500);
+    
+        // Obtiene el elemento h1
+        const heading2 = document.getElementById('color-changing-heading');
+    
+        // Define una función para cambiar el color
+        function changeColor() {
+          if (heading.style.color === 'white') {
+            heading.style.color = 'fuchsia';
+          } else {
+            heading.style.color = 'white';
+          }
+        }
+        // Cambia el color cada 3 segundos
+        setInterval(changeColor, 2500);
     </script>
 </body>
+
 </html>
