@@ -1,163 +1,244 @@
 body {
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: Arial, sans-serif;
 }
 
 #logotipo {
   border-radius: 95%;
   border: 9px solid rgb(224, 13, 199);
   width: 310px;
-  transition: border-color 0.5s ease-in-out; /* Transición suave */
+  transition: border-color 0.5s ease-in-out;
+  /* Transición suave */
 }
+
+#logotipo2 {
+  border-radius: 96%;
+  border: 9px solid rgb(234, 114, 220);
+  width: 285px;
+  transition: border-color 0.5s ease-in-out;
+  /* Transición suave */
+}
+
 .header {
-    position: top;
-    z-index: 1;
-    text-align: center;
+  position: top;
+  z-index: 1;
+  text-align: center;
 }
 
 
 .contenedor-imagen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('lotus.jpg');
-    background-size: cover;
-    filter: blur(6px);
-    filter: contrast(8px);
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200vh;
+  background-image: url('/imag/lotus.jpg');
+  background-size: cover;
+  filter: blur(9px);
+  filter: contrast(15px);
+  z-index: -1;
 }
 
 .contenido-pagina {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 
 button {
-    padding: 15px 20px;
-    color: fuchsia;
-    
-    border: springgreen;
-    border-radius: 50px;
-    margin: 4px 2px;
-    cursor: pointer;
+  padding: 15px 20px;
+  color: fuchsia;
+  border: springgreen;
+  border-radius: 50px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 button:hover {
-    color:  #000;
-    background-color: pink;
+  color: #000;
+  background-color: pink;
 }
 
 ul {
-    list-style-type: none;
-    margin: 50px;
-    padding: px;
-    overflow: none;
-    width: fit-content;
+  font-family: Gothic Medium;
+  text-align: left;
+  list-style-type: none;
+  margin: 55px;
+  padding: 8px;
+  overflow: none;
+  width: fit-content;
+
 }
 
 li {
-    float: left;
+  float: left;
+  max-width: 220px;
+  max-height: 199px;
+
+
 }
 
 .active {
-    background-color: pink;
+  background-color: pink;
 }
 
-.nav-link {
-    color: #000;
-  }
-
-  .nav-link:hover {
-    color: #000;
-    background-color: violet;
-  }
-
+.h4color {
+  text-shadow: 1px 2px 2px, 0 0 25px rgb(174, 0, 255), 0 0 5px darkblue;
+  text-align: center;
+  font-size: 19px;
+  color: azure;
+}
 
 .h3color {
-    text-shadow: 1px 1px 2px, 0 0 25px rgb(174, 0, 255), 0 0 5px darkblue;
-    text-align: center;
-    font-size: 50px;
-    color: azure;
-  }
-  
-  .h2color {
-    text-shadow: 1px 1px 2px, 0 0 25px rgb(212, 0, 255), 0 0 5px rgb(0, 123, 255);
-    text-align: center;
-    font-size: 50px;
-    color: white;
-  }
+  text-shadow: 1px 1px 2px, 0 0 25px rgb(174, 0, 255), 0 0 5px darkblue;
+  text-align: center;
+  font-size: 50px;
+  color: azure;
+}
+
+.h2color {
+  text-shadow: 1px 1px 2px, 0 0 25px rgb(212, 0, 255), 0 0 5px rgb(0, 123, 255);
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
 
 .neon {
-    font-size: 50px;
-    color: black;
-    text-shadow: 0 0 10px turquoise, 0 0 20px turquoise, 0 0 30px turquoise , 0 0 40px blue, 0 0 70px blue,
-        0 0 80px cyan , 0 0 100px cyan, 0 0 150px cyan;
+  font-size: 50px;
+  color: black;
+  text-shadow: 0 0 10px turquoise, 0 0 20px turquoise, 0 0 30px turquoise, 0 0 40px blue, 0 0 70px blue,
+    0 0 80px cyan, 0 0 100px cyan, 0 0 150px cyan;
 }
 
 .text {
-font-size: 35px;
-text-decoration: wavy;
-text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
+  font-size: 35px;
+  text-decoration: wavy;
+  text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 }
 
 .text2 {
-    font-size: 30px;
-    text-transform: capitalize;
-    text-decoration: wavy;
-    text-shadow: 1px 1px 5px, 0 0 28px rgba(232, 19, 211, 0.93), 0 0 5px rgb(9, 17, 27);
-    }
+  font-size: 30px;
+  text-transform: capitalize;
+  text-decoration: wavy;
+  text-shadow: 1px 1px 5px, 0 0 28px rgba(232, 19, 211, 0.93), 0 0 5px rgb(9, 17, 27);
+}
 
 .offcanvas-content {
-    padding: 20px;
-  }
-  .offcanvas.active {
-    right: 0;
-  }
-  .content {
-    position: relative;
-    z-index: -1px;
-    padding: 90px;
-}
-#image-container {
-    width: 1380px;
-    margin: -10px 50px;
-    text-align: center;
-    white-space: nowrap;
-    overflow: auto;
-    display: flex;
-}
-#image-container2 {
-    width: 1480px;
-    margin: -350px 0px;
-    text-align: center;
-    white-space: nowrap;
-    display: flex;
+  padding: 20px;
 }
 
+.offcanvas.active {
+  right: 0;
+}
+
+.content {
+  position: relative;
+  z-index: -1px;
+  padding: 90px;
+}
+
+#image-container {
+  width: 1380px;
+  margin: -10px 50px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: auto;
+  display: flex;
+}
+
+#image-container2 {
+  width: 1480px;
+  margin: -350px 0px;
+  text-align: center;
+  white-space: nowrap;
+  display: flex;
+}
+
+/* AQUI INICIA EL ESTILO EXTRA PARA INICIAR SESION Y PARA HEADER NEW**/
+nav {
+  background-color: #FFD5D6;
+  background-size: cover;
+  background-image: url("/imag/c76bd053b15bad840c0c8df71e4ebe69.gif");
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+header {
+  background-color: black;
+  padding: 10px;
+}
+
+nav ul li a {
+  color: black;
+  text-shadow: 0 0 10px turquoise, 0 0 20px turquoise, 0 0 30px turquoise, 0 0 40px blue, 0 0 70px blue,
+    0 0 80px cyan, 0 0 100px cyan, 0 0 150px cyan;
+  text-decoration: none;
+  padding: 10px 50px;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  background-color: rgb(174, 0, 255);
+  color: #fff;
+}
+
+.logo img {
+  height: 120px;
+  border-radius: 60%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.image:hover img {
+  transform: scale(1.1);
+  /* Ajusta el valor según sea necesario */
+}
+
+.image img {
+  transition: transform 0.3s ease;
+  /* Ajusta la duración de la transición según sea necesario */
+}
+
+/*Para modificar el formulario modal*/
+.offcanvas {
+  position: fixed;
+  top: 0;
+  right: -390px;
+  width: 340px;
+  height: 100vh;
+  background-color: plum;
+  transition: right 0.4s ease-in-out;
+  z-index: 9999;
+}
+
+/* HASTA AQUI EL ESTILO EXTRA PARA INICIAR SESION Y PARA HEADER NEW**/
 
 .carousel-images {
-    display: flex;
-    margin: 360px, 220px;
-    padding: 2px;
-    transition: transform 0.3s ease-in-out;
+  display: flex;
+  margin: 360px, 220px;
+  padding: 2px;
+  transition: transform 0.3s ease-in-out;
 }
+
 .carousel-item {
-    transition: step-start;
-    transition-duration: 0.3s !important;   
-  }
+  transition: step-start;
+  transition-duration: 0.3s !important;
+}
 
-  .image {
-    display: contents;
-    width: 960px;
-    height: 950px;
-    margin: 50 10px;
+.image {
+  display: contents;
+  width: 960px;
+  height: 950px;
+  margin: 50 10px;
 
 }
+
 .image img {
   border-radius: 3%;
   border: 11px solid whitesmoke;
@@ -167,34 +248,36 @@ text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
 }
 
 .image:hover img {
-transform: scale(1.3); /* Ajusta el valor según sea necesario */
-transition: transform 0.3s ease-in-out;
+  transform: scale(1.3);
+  /* Ajusta el valor según sea necesario */
+  transition: transform 0.3s ease-in-out;
 }
+
 .image img {
-    transition: transform 0.3s ease-in-out;
-    }
+  transition: transform 0.3s ease-in-out;
+}
+
 .contenido-pagina ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-  
+
 .contenido-pagina ul li {
-    display: inline-block;
+  display: inline-block;
 }
-  
+
 .dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 190px;
-    z-index: 1;
+  display: none;
+  position: absolute;
+  min-width: 190px;
+  z-index: 1;
 }
-  
+
 .dropdown-content li {
-    display: block;
+  display: block;
 }
-  
+
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
-  
