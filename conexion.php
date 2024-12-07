@@ -2,10 +2,10 @@
 session_start();
 
 // Configuración de la conexión a la base de datos
-$servername = "localhost";
-$username = "Snakold";
-$password = "andromeda1";
-$dbname = "tiam";
+$servername = "******";
+$username = "******";
+$password = "*********";
+$dbname = "****";
 
 // Guardar los datos en la base de datos
 $conn = new mysqli($servername, $username, $password, $dbname);
