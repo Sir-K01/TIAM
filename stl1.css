@@ -34,7 +34,7 @@ body {
   left: 0;
   width: 100vw;
   height: 200vh;
-  background-image: url('/imag/lotus.jpg');
+  background-image: url('lotus.jpg');
   background-size: cover;
   filter: blur(9px);
   filter: contrast(15px);
@@ -160,7 +160,7 @@ li {
 nav {
   background-color: #FFD5D6;
   background-size: cover;
-  background-image: url("/imag/c76bd053b15bad840c0c8df71e4ebe69.gif");
+  background-image: url("c76bd053b15bad840c0c8df71e4ebe69.gif");
   color: #fff;
   display: flex;
   justify-content: space-between;
