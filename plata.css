@@ -1,0 +1,330 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+#logotipo {
+  border-radius: 95%;
+  border: 9px solid rgb(224, 13, 199);
+  width: 350px;
+  transition: border-color 0.4s ease-in-out;
+  /* Transición suave */
+}
+
+#myCarousel {
+  height: 700px;
+background-color: transparent;
+}
+
+div.polaroid {
+  width: 330px;
+  height: 417px;
+ /* Definir la sombra original con el color negro */
+ box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 40px rgba(0, 0, 0, 0.5);
+  float:left !important;
+  text-align: center;
+  padding-right: 1px;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 8px;
+  background-color: #1F2632;
+  
+}
+div.polaroid:hover {
+  /* Cambiar la sombra a cyan cuando se pase el mouse sobre el elemento */
+  box-shadow: 0 30px 90px 0 rgba(0, 255, 255, 0.2), 0 6px 20px 0 rgba(106, 87, 232, 0.19);
+}
+.pic{
+ width:  290px;
+ height: 290px;
+padding: 5px;
+}
+
+p{
+font-size: large;
+font-family: 'Franklin Gothic Medium';
+font-style: italic;
+}
+
+.carousel-indicators .active {
+  background-color: darkcyan;
+}
+
+.carousel-item img {
+  object-fit: cover;
+}
+
+
+.carousel-item {
+  transition-duration: 0.3s !important;
+}
+
+#logotipo2 {
+  border-radius: 96%;
+  width: 285px;
+  transition: border-color 0.5s ease-in-out;
+  /* Transición suave */
+}
+
+.header {
+  position: top;
+  z-index: 1;
+  text-align: center;
+}
+
+.contenedor-imagen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 99vw;
+  height: 110vh;
+  background-color: #1F2632;
+  background-size: cover;
+  filter: blur(9px);
+  filter: contrast(15px);
+  z-index: -1;
+}
+
+.contenido-pagina {
+  position: relative;
+  z-index: 1;
+}
+
+button {
+  padding: 15px 20px;
+  color: fuchsia;
+  border: springgreen;
+  border-radius: 50px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #000;
+  background-color: pink;
+}
+
+ul {
+  font-family: Gothic Medium;
+  text-align: left;
+  list-style-type: none;
+  margin: 55px;
+  padding: 8px;
+  overflow: none;
+  width: fit-content;
+
+}
+
+li {
+  float: left;
+  max-width: 220px;
+  max-height: 199px;
+}
+
+.active {
+  background-color: pink;
+}
+
+.h4color {
+  text-shadow: 1px 2px 2px, 0 0 25px rgb(174, 0, 255), 0 0 5px darkblue;
+  text-align: center;
+  font-size: 19px;
+  color: azure;
+}
+
+.h3color {
+  text-shadow: 1px 1px 2px, 0 0 25px rgb(174, 0, 255), 0 0 5px darkblue;
+  text-align: center;
+  font-size: 58px;
+  color: azure;
+}
+
+.h2color {
+  text-shadow: 1px 1px 2px, 0 0 25px rgb(212, 0, 255), 0 0 5px rgb(0, 123, 255);
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+.neon {
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 0 10px rgb(168, 244, 236), 0 0 20px rgb(255, 255, 255), 0 0 30px , rgb(200, 200, 255), 0 0 70px cyan,
+    0 0 80px;
+}
+
+.text {
+  font-size: 35px;
+  text-decoration: wavy;
+  text-shadow: 1px 1px 5px, 0 0 28px rgb(255, 0, 187), 0 0 5px rgb(183, 0, 255);
+}
+
+.text2 {
+  font-size: 30px;
+  text-transform: capitalize;
+  text-decoration: wavy;
+  text-shadow: 1px 1px 5px, 0 0 28px rgba(232, 19, 211, 0.93), 0 0 5px rgb(9, 17, 27);
+}
+
+.offcanvas-content {
+  padding: 20px;
+}
+
+.offcanvas.active {
+  right: 0;
+}
+
+.content {
+  position: relative;
+  z-index: -1px;
+  padding: 90px;
+}
+
+#image-container {
+  width: 1380px;
+  margin: -10px 50px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: auto;
+  display: flex;
+}
+
+#image-container2 {
+  width: 1480px;
+  margin: -350px 0px;
+  text-align: center;
+  white-space: nowrap;
+  display: flex;
+}
+/*#1F2632*/
+/* AQUI INICIA EL ESTILO EXTRA PARA INICIAR SESION Y PARA HEADER NEW**/
+nav {
+  background-color: #2E343F;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+header {
+  background-color: black;
+  padding: 10px;
+}
+
+nav ul li a {
+  color: black;
+  text-shadow: 0 0 10px turquoise, 0 0 20px turquoise, 0 0 30px turquoise, 0 0 40px blue, 0 0 70px blue,
+    0 0 80px cyan, 0 0 100px cyan, 0 0 150px cyan;
+  text-decoration: none;
+  padding: 10px 50px;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  background-color: rgb(57, 18, 68);
+  color: #fff;
+}
+
+.logo img {
+  height: 120px;
+  border-radius: 60%;
+}
+
+.log2 img {
+  height: 140px;
+  border-radius: 60%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.image:hover img {
+  transform: scale(2.3);
+  /* Ajusta el valor según sea necesario */
+}
+
+.image img {
+  transition: transform 0.3s ease;
+  /* Ajusta la duración de la transición según sea necesario */
+}
+
+/*Para modificar el formulario modal*/
+.offcanvas {
+  position: fixed;
+  top: 0;
+  right: -390px;
+  width: 340px;
+  height: 100vh;
+  background-color: plum;
+  transition: right 0.4s ease-in-out;
+  z-index: 9999;
+}
+
+/* HASTA AQUI EL ESTILO EXTRA PARA INICIAR SESION Y PARA HEADER NEW**/
+
+.carousel-images {
+  display: flex;
+  margin: 360px, 220px;
+  padding: 2px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+  transition: step-start;
+  transition-duration: 0.3s !important;
+}
+
+.image {
+  display: contents;
+  width: 960px;
+  height: 950px;
+  margin: 50 10px;
+
+}
+
+.image img {
+  border-radius: 3%;
+  border: 11px solid whitesmoke;
+  width: 350px;
+  height: 350px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover img {
+  transform: scale(1.3);
+  /* Ajusta el valor según sea necesario */
+  transition: transform 0.3s ease-in-out;
+}
+
+.image img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.contenido-pagina ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contenido-pagina ul li {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 190px;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

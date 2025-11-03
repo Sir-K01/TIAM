@@ -6,16 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="stl1.css">
-  <link rel="icon" type="image/x-icon" href="icon.png">
-  <title> NatyTiam.com </title>
+  <link rel="icon" type="image/x-icon" href="imag/icon.png">
+  <title>Tiam.com </title>
 </head>
 
 <style>
-      .dropdown {
+  .dropdown {
     position: relative;
-}
+  }
 
-.dropdown-content {
+  .dropdown-content {
     display: none;
     position: absolute;
     min-width: 290px;
@@ -23,34 +23,38 @@
     z-index: 1;
     font-size: 15px;
     text-align: center;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.image:hover img {
-    transform: scale(1.1); /* Ajusta el valor según sea necesario */
   }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .image:hover img {
+    transform: scale(1.1);
+    /* Ajusta el valor según sea necesario */
+  }
+
   .image img {
-    transition: transform 0.3s ease; /* Ajusta la duración de la transición según sea necesario */
+    transition: transform 0.3s ease;
+    /* Ajusta la duración de la transición según sea necesario */
   }
 
   #login-form {
     display: flex;
     flex-direction: column;
   }
-  
+
   #login-form label {
     margin-bottom: 5px;
   }
-  
+
   #login-form input,
   #login-form select {
     margin-bottom: 10px;
     padding: 5px;
     font-size: 15px;
   }
-  
+
   #login-form button {
     background-color: silver;
     color: black;
@@ -58,10 +62,11 @@
     font-size: 19px;
     cursor: pointer;
   }
-  
+
   #login-form button:hover {
     background-color: violet;
   }
+
   .modal {
     display: none;
     position: fixed;
@@ -72,7 +77,7 @@
     height: 160%;
     overflow: auto;
   }
-  
+
   .modal-content {
     color: cadetblue;
     margin: 15% auto;
@@ -80,7 +85,7 @@
     border: 10px solid slategrey;
     width: 300px;
   }
-  
+
   .close {
     color: blueviolet;
     float: right;
@@ -88,40 +93,44 @@
     font-weight: bold;
     cursor: pointer;
   }
-  
+
   .close:hover,
   .close:focus {
     color: aquamarine;
     text-decoration: none;
     cursor: pointer;
   }
+
   .dropdown {
     position: relative;
-}
+  }
 
-.dropdown-content {
+  .dropdown-content {
     display: none;
     position: absolute;
     background-color: plum;
     width: 315px;
     height: 182px;
-    
+
     box-shadow: 1px 15px 22px 0px rgb(245, 162, 162);
     z-index: 1;
     text-align: initial;
-}
+  }
 
-.dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content {
     display: block;
     margin: auto;
-}
-.image:hover img {
-    transform: scale(1.1); /* Ajusta el valor según sea necesario */
-  }
-  .image img {
-    transition: transform 0.3s ease; /* Ajusta la duración de la transición según sea necesario */
   }
 
+  .image:hover img {
+    transform: scale(1.1);
+    /* Ajusta el valor según sea necesario */
+  }
+
+  .image img {
+    transition: transform 0.3s ease;
+    /* Ajusta la duración de la transición según sea necesario */
+  }
 </style>
 
 <body>
@@ -130,28 +139,28 @@
     <div class="contenedor-imagen"> </div>
     <nav>
       <div class="logo">
-        <img src="icon.png"" alt="Logo de la empresa">
+        <img src="imag\icon.png"" alt=" Logo de la empresa">
       </div>
-      <h1 id="color-changing-heading" style="white-space: pre;" class="h3color">NATY TIAM </h1>
+      <h1 id="color-changing-heading" style="white-space: pre;" class="h3color">TIAM </h1>
       <ul>
-      
+
         <li class="dropdown">
           <a class="h4color" href="#">Productos &#11015;</a>
           <div class="dropdown-content">
             <br>
-            <a class="h4color" href="Accseso.html">Accesorios &#x1F48D; &#x1F4FF;</a>
+            <a class="h4color" href="/Accseso.html">Accesorios &#x1F48D; &#x1F4FF;</a>
             <br>
             <br>
-            <a class="h4color" href="amigu.html">Amigurumis &#x1F9F8;</a>
+            <a class="h4color" href="/amigu.html">Amigurumis &#x1F9F8;</a>
             <br>
             <br>
-            <a class="h4color" href="repost.html">Reposteria &#x1F370;</a>
+            <a class="h4color" href="/Plata.html">MirraJ Division plata</a>
             <br>
             <br>
-            <a class="h4color" href="gift.html">Regalos por ocasion&#x1F381; &#x1F4C5;</a>
+            <a class="h4color" href="/gift.html">Regalos por ocasion&#x1F381; &#x1F4C5;</a>
             <br>
           </div>
-        <li> <a class="h4color" href="redes_soc.html">Redes Sociales  </a></li>
+        <li> <a class="h4color" href="/redes_soc.html">Redes Sociales </a></li>
 
         <li><a class="h4color" href="#" id="login-link">Iniciar sesión</a></li>
         <div id="offcanvas" class="offcanvas">
@@ -167,12 +176,11 @@
               <input type="file" id="foto" name="foto" accept="image/*">
               <button type="submit" id="submit-btn">Acceder</button>
               <br>
+              <center><img id="logotipo2" src="/imag/icon.png" alt="Logotipo"></center>
               <br>
-              <br>
-              <br>
-              <center><img id="logotipo2" src="icon.png" alt="Logotipo"></center>
-              <br>
-              <a class="h2color" style="font-size: large; font-family: Cambria; text-align: center; text-decoration: underline skyblue;">POWERED BY:KOLD</a>
+              <a class="h2color"
+                style="font-size: large; font-family: Cambria; text-align: center; text-decoration: underline skyblue;">POWERED
+                BY:KOLD</a>
             </form>
           </div>
         </div>
@@ -182,46 +190,47 @@
     </nav>
   </header>
 
-                                                <!--AQUI SE VA A HACER LOS PRODUCTOS MAS NUEVOS O VENDIDOS-->
+  <!--AQUI SE VA A HACER LOS PRODUCTOS MAS NUEVOS O VENDIDOS-->
   <!-- Contenido de la página -->
   <h1 id="color-changing-heading" class="h3color">PRODUCTOS MAS NUEVOS</h1>
   <br>
-
   <center>
     <div class="image-container">
       <div class="image">
-        <img src="lechuz2.jpg" alt="Amigurumi Lechuza"
+        <img src="/merch/lechuz2.jpg" alt="Amigurumi Lechuza"
           style="border-radius:3%;border: 5px solid whitesmoke; width: 330px; height: 300px;">
       </div>
 
       <div class="image">
-        <img src="IMG-20240428-WA0009.jpg"
-          alt="Arreglo de luces led en forma de Corazón"
+        <img src="/merch/IMG-20240428-WA0009.jpg" alt="Arreglo de luces led en forma de Corazón"
           style="border-radius:3%;border: 5px solid whitesmoke; width: 330px; height: 300px;">
       </div>
 
       <div class="image">
-        <img src="vaqui.jpg" alt="Vaquita Amigurumi"
+        <img src="/merch/vaqui.jpg" alt="Vaquita Amigurumi"
           style="border-radius:3%;border: 5px solid whitesmoke; width: 330px; height: 300px;">
       </div>
 
       <div class="image">
-        <img src="IMG-20240428-WA0017.jpg" alt="Ramo de rosas eternas"
-          alt="pulseras" style="border-radius:3%;border: 5px solid whitesmoke; width: 330px; height: 300px;">
+        <img src="/merch\IMG-20240428-WA0017.jpg" alt="Ramo de rosas eternas" alt="pulseras"
+          style="border-radius:3%;border: 5px solid whitesmoke; width: 330px; height: 300px;">
       </div>
     </div>
   </center>
   <br>
   <br>
   <br>
-  <center><img id="logotipo" src="icon.png" alt="Logotipo"></center>
-
-
+  <center><img id="logotipo" src="/imag/icon.png" alt="Logotipo"></center>
+  <br>
   <div
     style="border-radius: 10px; background-color: lightpink; opacity: 85%; margin-left: 65px; margin-right: 65px; margin-top: -15px;">
 
     <center>
-      <p class="text">ACERCA DE</p>
+      
+      <img id="yoshi" style="display: 550px; height: 350px; margin-left: -1050px; margin-top: 20px; margin-right: 50px;
+    padding: 2px;" src="/imag/Y-right.png" alt="yoshi baner left">
+
+      <p class="text" style="margin-top: -250px;" >ACERCA DE</p>
       <p style="color: black; font-size: 28px; font-family: Gothic Medium; white-space: pre;">Somos un negocio que se
         encarga de llevar a la realidad tus ideas y convertirlas
         en accesorios de moda para tu día a día.
@@ -236,27 +245,34 @@
     <center>
       <p class="text" style="white-space: pre;">FAQ
         (Frequent Answers and Questions)</p>
-      <p style="color: black; font-size: 28px; font-family: Gothic Medium; white-space: pre; text-align: justify;">¿Que significa TIAM?
-        TIAM es un acronimo para: 
+      <p style="color: black; font-size: 29px; font-family: Gothic Medium; white-space: pre; text-align: center;">
+        ¿Que significa TIAM?
+        TIAM es un acronimo para:
         Transformando Ideas en Accesorios de Moda
-        y se ha convertido en nuestro sello personal para cada creación.
+        y se ha convertido en nuestro sello personal para cada creación, siendo nuestra marca madre 
+        de donde proviene cada una de nuestras ideas.
 
-¿Que venden?
+        ¿Que venden?
         vendemos llaveros, collares, pulseras, amigurumis y regalos para toda clase de ocasion.
         Y todo es 100% personalizable.
+        Tambien ofertamos productos de plata con diseños elegantes y llamativos para toda ocasion.
 
-¿Tienen tienda fisica?
+        ¿Tienen tienda fisica?
         Por el momento no tenemos una tienda fisica, todas nuestras ventas son de forma virtual
         y con respectivo acuerdo de entrega con nuestros usuarios.
-n
-!Manejamos envios a todo el pais¡
-Para mas informacion sobre ventas a todo el pais consulta por mensaje.
+        ¿Hacen envios?
+        !Manejamos envios a todo el pais¡
+        Para mas informacion sobre ventas a todo el pais consulta por mensaje.
       </p>
+      <!-- fushikan okusuri jusei kiroku bote ecchi-->
       <br>
       <br>
-      <a class="h2color" style="font-size: large; font-family: Cambria; text-align: center; text-decoration: underline skyblue;">POWERED BY:KOLD</a>
+      <a class="h2color"
+        style="font-size: large; font-family: Cambria; text-align: center; text-decoration: underline skyblue;">POWERED
+        BY: KOLD</a>
       <br>
       <br>
+      
       <script>
         // Obtiene el elemento h1
         const heading = document.getElementById('color-changing-heading');
@@ -287,7 +303,7 @@ Para mas informacion sobre ventas a todo el pais consulta por mensaje.
         // Cambia el color cada 3 segundos
         setInterval(changeColor, 2500);
 
-      <!-- cambio de color del logotipo -->
+        <!-- cambio de color del logotipo -->
         function getRandomPastelColor() {
           var r = Math.floor(Math.random() * 100) + 155; // Componente rojo en el rango [155, 255]
           var g = Math.floor(Math.random() * 100) + 105; // Componente verde en el rango [155, 255]
@@ -308,21 +324,40 @@ Para mas informacion sobre ventas a todo el pais consulta por mensaje.
 
         let currentIndex = 0;
 
-  const loginLink = document.getElementById("login-link");
-const offcanvas = document.getElementById("offcanvas");
-const closeBtn = document.getElementById("close-btn");
-const loginForm = document.getElementById("login-form");
+        const loginLink = document.getElementById("login-link");
+        const offcanvas = document.getElementById("offcanvas");
+        const closeBtn = document.getElementById("close-btn");
+        const loginForm = document.getElementById("login-form");
 
-loginLink.addEventListener("click", function() {
-offcanvas.classList.add("active");
-});
+        loginLink.addEventListener("click", function () {
+          offcanvas.classList.add("active");
+        });
 
-document.addEventListener("click", function(event) {
-if (!offcanvas.contains(event.target) && !loginLink.contains(event.target)) {
-  offcanvas.classList.remove("active");
-}
-});
+        document.addEventListener("click", function (event) {
+          if (!offcanvas.contains(event.target) && !loginLink.contains(event.target)) {
+            offcanvas.classList.remove("active");
+          }
+        });
 
-</script>
+      
+      var yoshi = document.getElementById("yoshi");
+      var imagenes = ["imag/Y-right.png", "imag/Y-left.png"]; // Array con las rutas de las imágenes
+      var indiceImagen = 0;
+
+      function mostrarImagen() {
+        yoshi.onload = function () {
+          yoshi.style.display = "block";
+        };
+        yoshi.src = imagenes[indiceImagen];
+
+        indiceImagen++;
+        if (indiceImagen >= imagenes.length) {
+          indiceImagen = 0;
+        }
+      }
+      setInterval(mostrarImagen, 2600); /*AQUI LE INDICO EL TIEMPO DE APARICION*/
+
+      </script>
 </body>
+
 </html>
